@@ -1,0 +1,271 @@
+# Pre-filter drops (§6.1), always-promote patterns (§6.3) and the keyword
+# lexicon used by the degraded fallback path (Appendix C).
+#
+# All patterns are matched case-insensitively as regexes against
+# "<title>\n<blurb>" unless noted otherwise.
+
+# ---------------------------------------------------------------------------
+# §6.1 Pre-filter — deliberately minimal. Only drop unambiguous noise.
+# Recall is the priority; resist the urge to pre-filter harder.
+# ---------------------------------------------------------------------------
+prefilter:
+  # Region-expansion boilerplate. Only drops when the item ALSO contains a
+  # region token AND does not match any security term and does not name one of
+  # your regions. See prefilter.py.
+  region_expansion_phrases:
+    - now available in
+    - now generally available in
+    - is now available in
+    - expanded to
+    - now supported in
+    - available in (?:the )?(?:additional|new)
+    - launches in
+    - now open in
+    - expands to
+
+  # GCP release-note categories that are never digest material.
+  drop_gcp_categories:
+    - Libraries
+    - Fixed
+
+  # GCP uses the <h3> label for GKE/Apigee version and channel names, which are
+  # release plumbing rather than news. Matched as regexes against the category.
+  drop_gcp_category_patterns:
+    - ^cos-
+    - ^v\d+\.\d+
+    - channel$
+    - ^No channel
+
+  # Azure "In development" items. Set to false to keep them as early warning.
+  drop_azure_in_development: true
+
+  # ---------------------------------------------------------------------
+  # Appendix D toggle. CVE advisories and vulnerability/patch bulletins are a
+  # different kind of content with a different cadence and urgency, and are out
+  # of scope by default. They are NOT rare: GCP's release-note "Security"
+  # category is ~95% Container-Optimized OS image patch notes (430 of 453 in a
+  # 60-day window as of 2026-07-28), which would swamp the digest.
+  #
+  # Set to true to let them through — they are then classified like any other
+  # item, no other change required.
+  # ---------------------------------------------------------------------
+  include_vulnerability_bulletins: false
+
+  vulnerability_bulletin:
+    # Services whose release notes are purely image/patch bulletins.
+    services:
+      - Container Optimized OS
+      - Container-Optimized OS
+    # Narrow phrases that only ever appear in patch notes and vulnerability
+    # disclosures. Deliberately disclosure-shaped ("was discovered in") so that
+    # product news about vulnerability *tooling* still gets through — e.g.
+    # "Security Command Center adds vulnerability findings for X" is kept.
+    text_patterns:
+      - various security and cve fixes
+      - security and cve fixes are included
+      - ^\s*bug id\s+description
+      - ^\(\d{4}-R\d+\)\s+security updates
+      - ^security bulletin
+      - ^this release includes new gke versions
+      - vulnerabilit(y|ies) (was|were|has been|have been) (discovered|identified|found|reported)
+      - vulnerabilit(y|ies) in .{0,60} (was|were|has been|have been) (discovered|identified|found)
+      - ^security update for
+      - \bCVE-\d{4}-\d{4,}
+      - ^(a|an) .{0,50}vulnerability
+      - security (fix|patch)(es)? (for|in)
+
+  # Hard drops regardless of anything else. Keep this list very short.
+  drop_title_patterns:
+    - ^\s*$
+
+# ---------------------------------------------------------------------------
+# §6.3 Always-promote — override the classifier, pin to "Action Needed".
+# These carry deadlines and are the main reason the digest exists.
+# ---------------------------------------------------------------------------
+promote_patterns:
+  - deprecat
+  - \bretire(s|d|ment)?\b
+  - end[- ]of[- ]life
+  - \bEOL\b
+  - end[- ]of[- ]support
+  - breaking change
+  - \bmandatory\b
+  - will be disabled
+  - must migrate
+  - action required
+  - action needed
+  - TLS 1\.0
+  - TLS 1\.1
+  - legacy auth
+  - basic authentication
+  - certificate expir
+  - default will change
+  - enabled by default
+  - disabled by default
+  - no longer support
+  - will no longer
+  - sunset
+
+# ---------------------------------------------------------------------------
+# Appendix C — keyword lexicon. Used ONLY when the LLM path fails (§8).
+# Precision ~40-50%; acceptable as a degraded fallback, not as primary.
+# Each keyword maps to the §7 category it implies.
+# ---------------------------------------------------------------------------
+lexicon:
+  identity:
+    - identity
+    - IAM
+    - RBAC
+    - ABAC
+    - permission
+    - privilege
+    - \brole\b
+    - principal
+    - authentication
+    - authorisation
+    - authorization
+    - \bMFA\b
+    - passwordless
+    - passkey
+    - \bSSO\b
+    - federation
+    - conditional access
+    - credential
+    - \btoken\b
+    - workload identity
+    - service account
+    - least privilege
+
+  data:
+    - encryption
+    - encrypt
+    - \bKMS\b
+    - \bHSM\b
+    - key management
+    - customer[- ]managed key
+    - \bCMEK\b
+    - \bBYOK\b
+    - \bHYOK\b
+    - envelope encryption
+    - secret
+    - vault
+    - rotation
+    - \bDLP\b
+    - sensitive data
+    - \bPII\b
+    - redaction
+    - data residency
+    - sovereignty
+    - immutab
+    - backup vault
+
+  network:
+    - firewall
+    - \bWAF\b
+    - \bDDoS\b
+    - private link
+    - private endpoint
+    - egress
+    - segmentation
+    - zero trust
+    - network isolation
+    - perimeter
+    - service control
+    - \bmTLS\b
+    - \bTLS\b
+    - cipher
+    - certificate
+    - \bPKI\b
+
+  detection:
+    - threat
+    - detection
+    - malware
+    - ransomware
+    - anomaly
+    - \bSIEM\b
+    - \bSOAR\b
+    - \bXDR\b
+    - \bCNAPP\b
+    - \bCSPM\b
+    - \bCIEM\b
+    - security posture
+    - vulnerability
+    - exposure
+    - attack path
+    - incident response
+    - threat intel
+
+  governance:
+    - audit
+    - logging
+    - CloudTrail
+    - access transparency
+    - compliance
+    - certification
+    - FedRAMP
+    - SOC 2
+    - ISO 27001
+    - \bPCI\b
+    - HIPAA
+    - \bGDPR\b
+    - guardrail
+    - policy
+    - classification
+
+  workload:
+    - confidential computing
+    - enclave
+    - \bTEE\b
+    - secure boot
+    - measured boot
+    - attestation
+    - signing
+    - \bSBOM\b
+    - provenance
+    - supply chain
+    - admission control
+    - image scanning
+    - shielded
+
+# Terms that rescue an item from the region-expansion drop (§6.1).
+# Deliberately broad — a false keep costs one line, a false drop costs a miss.
+security_terms_for_prefilter:
+  - security
+  - secure
+  - encrypt
+  - identity
+  - \bIAM\b
+  - \bMFA\b
+  - firewall
+  - \bWAF\b
+  - \bDDoS\b
+  - \bKMS\b
+  - \bHSM\b
+  - key management
+  - secret
+  - vault
+  - compliance
+  - audit
+  - threat
+  - malware
+  - vulnerability
+  - private link
+  - private endpoint
+  - zero trust
+  - confidential
+  - attestation
+  - certificate
+  - \bTLS\b
+  - sovereignty
+  - residency
+  - Defender
+  - Sentinel
+  - GuardDuty
+  - Security Hub
+  - Cloud Guard
+  - Cloud Armor
+  - Security Command Center
+  - Entra
+  - Cognito
+  - Data Safe

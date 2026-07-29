@@ -1,0 +1,127 @@
+# Feed sources (§5).
+#
+# tier 1 = dedicated security source. Every item is security-relevant by
+#          definition; these bypass the classifier's is_security decision
+#          (they still go to the LLM for a tldr + category).
+# tier 2 = general product feed. Requires classification.
+#
+# Fields:
+#   provider  aws | azure | gcp | oci
+#   name      stable slug, used in logs, state.json and the feed-rot canary
+#   url       feed URL
+#   tier      1 | 2
+#   enabled   optional, default true
+#   service   optional, pins every item from this feed to a service name
+#             (useful for the per-service OCI release-note feeds)
+
+# ---------------------------------------------------------------------------
+# Tier 1 — dedicated security sources, no classification needed
+# ---------------------------------------------------------------------------
+- provider: aws
+  name: security-blog
+  url: https://aws.amazon.com/blogs/security/feed/
+  tier: 1        # VERIFIED 2026-07-28: 20 items
+
+- provider: azure
+  name: ms-security-blog
+  url: https://www.microsoft.com/en-us/security/blog/feed/
+  tier: 1        # VERIFIED 2026-07-28: 10 items
+
+- provider: gcp
+  name: gcp-security-blog
+  url: https://cloudblog.withgoogle.com/products/identity-security/rss/
+  tier: 1        # VERIFIED 2026-07-28: 20 items
+
+# blogs.oracle.com sits behind bot protection and returns HTTP 403 to every
+# non-browser client (checked 2026-07-28: default UA, browser UA, and full
+# browser header set all 403). Left here, disabled, so it is not silently
+# forgotten — re-enable and re-run `python -m src.verify_feeds` if that changes.
+# Until then OCI security coverage comes from the Tier-2 release-note feeds
+# below, which are per-service and verified.
+- provider: oci
+  name: oracle-cloud-security-blog
+  url: https://blogs.oracle.com/cloudsecurity/rss
+  tier: 1
+  enabled: false
+
+# ---------------------------------------------------------------------------
+# Tier 2 — general product feeds, require classification
+# ---------------------------------------------------------------------------
+- provider: aws
+  name: whats-new
+  url: https://aws.amazon.com/about-aws/whats-new/recent/feed/
+  tier: 2
+
+- provider: azure
+  name: service-updates
+  url: https://www.microsoft.com/releasecommunications/api/v2/azure/rss
+  tier: 2
+
+- provider: gcp
+  name: release-notes
+  url: https://docs.cloud.google.com/feeds/gcp-release-notes.xml
+  tier: 2        # cloud.google.com/feeds/... 301s here; rolling ~60-day window
+
+# OCI release notes are per-service. All slugs below were probed on 2026-07-28
+# and return a non-empty feed. An unknown slug 302s to the release-notes index
+# and parses as zero items, which trips the feed-rot canary — so add new ones
+# only after `python -m src.verify_feeds` shows them green.
+#
+# Known-empty (valid slug, feed currently has no entries — omitted so they do
+# not fire the canary every run): vulnerability-scanning, security-zones,
+# threat-intelligence. There is no release-notes feed for Vault/KMS or WAF.
+- provider: oci
+  name: rn-cloud-guard
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/cloud-guard/feed
+  tier: 2
+  service: Cloud Guard
+
+- provider: oci
+  name: rn-identity
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/identity/feed
+  tier: 2
+  service: Identity
+
+- provider: oci
+  name: rn-data-safe
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/data-safe/feed
+  tier: 2
+  service: Data Safe
+
+- provider: oci
+  name: rn-network-firewall
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/network-firewall/feed
+  tier: 2
+  service: Network Firewall
+
+- provider: oci
+  name: rn-ztpr
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/zero-trust-packet-routing/feed
+  tier: 2
+  service: Zero Trust Packet Routing
+
+- provider: oci
+  name: rn-certificates
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/certificates/feed
+  tier: 2
+  service: Certificates
+
+- provider: oci
+  name: rn-bastion
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/bastion/feed
+  tier: 2
+  service: Bastion
+
+# Services you run (Appendix B / §6.4) — security changes on these get an
+# impact boost rather than being filtered out. Trim to match your estate.
+- provider: oci
+  name: rn-compute
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/compute/feed
+  tier: 2
+  service: Compute
+
+- provider: oci
+  name: rn-objectstorage
+  url: https://docs.oracle.com/en-us/iaas/releasenotes/services/objectstorage/feed
+  tier: 2
+  service: Object Storage

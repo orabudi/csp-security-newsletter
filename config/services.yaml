@@ -1,0 +1,151 @@
+# Service reference (Appendix B) — used for RANKING, never for filtering (§6.4).
+#
+# security_services: dedicated security services per provider. A change to one
+#   of these is security-relevant by definition and gets an impact boost.
+# estate: the services you actually run. A security change on one of these is
+#   high impact. Everything else is still worth one line.
+#
+# Matching is case-insensitive substring matching against title + service +
+# blurb, so keep entries reasonably specific ("IAM" is fine, "Config" is
+# borderline — it is scoped to AWS titles so it holds).
+
+security_services:
+  aws:
+    - IAM
+    - IAM Identity Center
+    - Organizations
+    - SCP
+    - GuardDuty
+    - Security Hub
+    - Inspector
+    - Macie
+    - Detective
+    - Security Lake
+    - WAF
+    - Shield
+    - Network Firewall
+    - Firewall Manager
+    - KMS
+    - Key Management Service
+    - CloudHSM
+    - Certificate Manager
+    - Secrets Manager
+    - Verified Access
+    - Verified Permissions
+    - Cognito
+    - AWS Config
+    - CloudTrail
+    - Audit Manager
+    - AWS Artifact
+    - PrivateLink
+    - Nitro Enclaves
+    - Payment Cryptography
+    - Resource Access Manager
+
+  azure:
+    - Defender for Cloud
+    - Microsoft Defender
+    - Microsoft Sentinel
+    - Defender XDR
+    - Entra ID
+    - Entra
+    - Conditional Access
+    - Privileged Identity Management
+    - Identity Protection
+    - Permissions Management
+    - Verified ID
+    - Global Secure Access
+    - Key Vault
+    - Managed HSM
+    - Azure Firewall
+    - Front Door
+    - Web Application Firewall
+    - DDoS Protection
+    - Private Link
+    - Azure Bastion
+    - Azure Policy
+    - Microsoft Purview
+    - Confidential Computing
+    - Azure Attestation
+
+  gcp:
+    - Security Command Center
+    - Cloud IAM
+    - IAM
+    - Access Context Manager
+    - BeyondCorp
+    - VPC Service Controls
+    - Cloud KMS
+    - Cloud HSM
+    - Secret Manager
+    - Cloud Armor
+    - Cloud NGFW
+    - Certificate Authority Service
+    - Certificate Manager
+    - Binary Authorization
+    - Assured Workloads
+    - Confidential
+    - Google SecOps
+    - Chronicle
+    - Mandiant
+    - Sensitive Data Protection
+    - Policy Intelligence
+    - Access Transparency
+    - Access Approval
+    - Identity Platform
+    - reCAPTCHA
+    - Shielded VM
+    - Workload Identity
+
+  oci:
+    - Cloud Guard
+    - Security Zones
+    - Security Advisor
+    - Vault
+    - Key Management
+    - WAF
+    - Network Firewall
+    - Vulnerability Scanning
+    - Threat Intelligence
+    - Data Safe
+    - Access Governance
+    - Bastion
+    - Certificates
+    - Audit
+    - Zero Trust Packet Routing
+    - Identity Domains
+    - Shielded Instances
+    - Confidential Computing
+
+# ---------------------------------------------------------------------------
+# YOUR ESTATE — edit this. Items touching these get an impact boost.
+# Leave a provider list empty if you do not run that cloud at all; an empty
+# estate simply means no boost is applied (nothing is dropped).
+# ---------------------------------------------------------------------------
+estate:
+  aws:
+    - EC2
+    - S3
+    - RDS
+    - Lambda
+    - EKS
+    - IAM
+    - CloudFront
+    - VPC
+  azure:
+    - Entra ID
+    - Azure Kubernetes Service
+    - Azure Storage
+    - Azure SQL
+    - Virtual Machines
+    - Key Vault
+  gcp:
+    - Google Kubernetes Engine
+    - Cloud Storage
+    - BigQuery
+    - Cloud Run
+    - Compute Engine
+  oci:
+    - Compute
+    - Object Storage
+    - Identity

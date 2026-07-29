@@ -1,0 +1,77 @@
+# Your regions.
+#
+# Used by prefilter.py: region-expansion boilerplate is dropped UNLESS the item
+# also matches a security term (§6.1). If an expansion names one of YOUR
+# regions it is kept regardless — a security service landing in your region is
+# news.
+#
+# `region_tokens` is the vocabulary used to recognise an item as a region
+# announcement at all. Extend it if a provider invents new naming.
+
+mine:
+  - us-east-1
+  - eu-west-1
+  - eu-central-1
+  - westeurope
+  - northeurope
+  - eastus
+  - us-central1
+  - europe-west1
+  - eu-frankfurt-1
+
+region_tokens:
+  # AWS / GCP / OCI style
+  - us-east
+  - us-west
+  - us-central
+  - eu-west
+  - eu-central
+  - eu-north
+  - eu-south
+  - ap-south
+  - ap-northeast
+  - ap-southeast
+  - ap-east
+  - ca-central
+  - sa-east
+  - me-south
+  - me-central
+  - af-south
+  - il-central
+  - europe-west
+  - europe-north
+  - europe-central
+  - asia-east
+  - asia-south
+  - asia-northeast
+  - asia-southeast
+  - australia-southeast
+  - northamerica-northeast
+  - southamerica-east
+  - eu-frankfurt
+  - eu-amsterdam
+  - uk-london
+  - us-ashburn
+  - us-phoenix
+  # Azure style
+  - eastus
+  - westus
+  - centralus
+  - northeurope
+  - westeurope
+  - uksouth
+  - ukwest
+  - southeastasia
+  - eastasia
+  - japaneast
+  - japanwest
+  - australiaeast
+  - brazilsouth
+  - canadacentral
+  # prose
+  - AWS Region
+  - Azure region
+  - additional regions
+  - new region
+  - Local Zone
+  - availability zone

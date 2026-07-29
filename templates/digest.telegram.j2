@@ -1,0 +1,32 @@
+{#- Telegram HTML: only b/i/u/s/a/code/pre/blockquote are allowed. No <br>. -#}
+<b>🔐 Cloud Security TLDR — {{ date_label }}</b>
+{% if lede %}
+
+{{ lede }}
+{% endif %}
+{% if note %}
+
+<i>{{ note }}</i>
+{% endif %}
+{% for section in sections %}
+
+<b>{{ section.emoji }} {{ section.title | upper }}</b>
+{% for item in section.entries %}
+• [{{ item.provider_label }}] {{ item.tldr }} — <a href="{{ item.url }}">link</a>
+{% endfor %}
+{% endfor %}
+
+{% if overflow_count %}
+{% if archive_url %}
+→ <a href="{{ archive_url }}">{{ overflow_count }} lower-impact item{{ 's' if overflow_count != 1 }} in the archive</a>
+{% else %}
+→ {{ overflow_count }} lower-impact item{{ 's' if overflow_count != 1 }} held back
+{% endif %}
+{% endif %}
+{% for alert in alerts %}
+🚨 {{ alert }}
+{% endfor %}
+<i>⚠️ sources unavailable today: {{ unavailable | join(', ') if unavailable else 'none' }}</i>
+{% if degraded %}
+<i>⚙️ degraded classifier ({{ classifier_path }})</i>
+{% endif %}

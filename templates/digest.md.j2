@@ -1,0 +1,35 @@
+# 🔐 Cloud Security TLDR — {{ date_label }}
+
+{% if lede %}
+{{ lede }}
+
+{% endif %}
+{% if note %}
+_{{ note }}_
+
+{% endif %}
+{% for section in sections %}
+## {{ section.emoji }} {{ section.title }}
+
+{% for item in section.entries %}
+- **[{{ item.provider_label }}]** {{ item.tldr }}{% if item.estate_hit %} _(you run this)_{% endif %} — [source]({{ item.url }})
+{% endfor %}
+
+{% endfor %}
+---
+
+{% if overflow_count %}
+→ [{{ overflow_count }} lower-impact item{{ 's' if overflow_count != 1 }} in the archive]({{ archive_url or '#' }})
+{% endif %}
+{% if alerts %}
+{% for alert in alerts %}
+🚨 {{ alert }}
+{% endfor %}
+{% endif %}
+{# inline {% endif %} would eat the trailing newline under trim_blocks — keep it an expression #}
+⚠️ sources unavailable today: {{ unavailable | join(', ') if unavailable else 'none' }}
+{% if degraded %}
+⚙️ classifier ran in degraded mode (`{{ classifier_path }}`) — precision is lower than usual
+{% endif %}
+
+<sub>generated {{ generated_at }}</sub>
