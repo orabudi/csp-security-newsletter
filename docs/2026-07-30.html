@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🔐 Cloud Security TLDR — Thu 30 Jul 2026</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 16px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #16181d;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 10px;
+          padding: 28px 26px; border: 1px solid #e3e6ea; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .lede { font-size: 15px; background: #f2f5ff; border-left: 3px solid #4557d4;
+          padding: 12px 14px; border-radius: 0 6px 6px 0; margin: 0 0 22px;
+          white-space: pre-line; }
+  .note { font-size: 14px; color: #6b7280; font-style: italic; margin: 0 0 18px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em;
+       margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e8eaee;
+       color: #374151; }
+  h2.action { color: #a4302a; border-bottom-color: #f2d3d0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 11px; padding-left: 2px; font-size: 15px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+         padding: 1px 6px; border-radius: 4px; background: #eef0f4; color: #4b5563;
+         margin-right: 7px; vertical-align: 1px; }
+  .tag.aws { background: #fdf0e3; color: #9a5b12; }
+  .tag.azure { background: #e7f0fd; color: #12539a; }
+  .tag.gcp { background: #e8f3ec; color: #1a6b3c; }
+  .tag.oci { background: #fbe9e9; color: #9c2a2a; }
+  .estate { font-size: 11px; color: #a4302a; font-weight: 600; margin-left: 4px; }
+  a { color: #2a49c4; }
+  a.src { font-size: 12px; color: #6b7280; text-decoration: none; white-space: nowrap; }
+  a.src:hover { text-decoration: underline; }
+  .overflow li { font-size: 14px; color: #4b5563; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e8eaee;
+           font-size: 12px; color: #6b7280; }
+  footer p { margin: 4px 0; }
+  .alert { color: #a4302a; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1013; color: #e6e8ec; }
+    .wrap { background: #16181d; border-color: #262a31; }
+    .lede { background: #171d33; border-left-color: #6f81ea; }
+    h2 { color: #c3c8d1; border-bottom-color: #262a31; }
+    h2.action { color: #f08b83; border-bottom-color: #4a2723; }
+    .tag { background: #24272e; color: #b6bcc7; }
+    .date, .note, a.src, footer, .overflow li { color: #9aa1ad; }
+    a { color: #93a5ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔐 Cloud Security TLDR</h1>
+  <p class="date">Thu 30 Jul 2026</p>
+
+
+  <h2 class="">🔑 Identity &amp; Access</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now replicate IAM Identity Center…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/07/aws-iam-identity-center-extends-multi-region-support-to-identity-center-directory">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>As Best Buy expanded its use of Google Cloud for advanced analytics and AI, its technology teams faced two significant scaling challenges: Mitigating risk and…      <a class="src" href="https://cloud.google.com/blog/topics/retail/best-buy-scales-secure-ai-access-with-workforce-identity-federation/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔒 Data Protection</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Choosing the right cryptographic key management service on Amazon Web Services (AWS) starts with understanding the difference between AWS Key Management Service (AWS KMS) and…      <a class="src" href="https://aws.amazon.com/blogs/security/aws-kms-or-aws-cloudhsm-choose-the-right-key-management-solution/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Cloud KMS Autokey with same-project key storage (formerly known as Autokey for delegated key management) is generally available. Autokey with same-project key storage can be…      <a class="src" href="https://docs.cloud.google.com/release-notes#July_29_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>With cryptographically relevant quantum computers (CRQC) on the horizon, transitioning to quantum-safe digital signatures is critical to safeguarding long-term data integrity and authenticity. Organizations are…      <a class="src" href="https://cloud.google.com/blog/products/identity-security/future-proofing-data-integrity-quantum-safe-digital-signatures-in-cloud-kms/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Announcing the public preview of Azure Enclave for Microsoft Azure, Azure Government, Azure Government Secret, and Azure Government Top Secret. Azure Enclave helps streamline the…      <a class="src" href="https://azure.microsoft.com/updates?id=568377">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🌐 Network Security</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Today, AWS WAF adds pre-parse text transformations for query arguments and ten new text transformations for use in any rule statement. Both help you normalize…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/07/aws-waf/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🛡️ Detection &amp; Response</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Amazon is sharing new findings about how a threat actor linked to the Democratic People’s Republic of Korea (DPRK) is targeting open source software libraries…      <a class="src" href="https://aws.amazon.com/blogs/security/amazon-identifies-north-korean-hacker-group-behind-open-source-supply-chain-attacks/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>View prebuilt parser version content You can now view the prebuilt parser preview version content even if you are using a custom parser for the…      <a class="src" href="https://docs.cloud.google.com/release-notes#July_29_2026">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📋 Governance &amp; Compliance</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Web Services (AWS) is excited to announce that the latest version of Information Security Registered Assessors Program (IRAP) report (Phase 1a – full assessment)…      <a class="src" href="https://aws.amazon.com/blogs/security/2026-phase-1a-irap-report-is-now-available-on-aws-artifact-for-australian-customers/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon EC2 Auto Scaling now supports Instance Refresh as a new AWS CloudFormation update policy. When you configure the new AutoScalingInstanceRefresh update policy and update…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-auto-scaling-instance-refresh-cloudformation">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>As organizations move beyond AI experimentation, success will depend on how effectively they combine intelligence and trust. The same systems that amplify knowledge, accelerate decisions…      <a class="src" href="https://www.microsoft.com/en-us/security/blog/2026/07/29/better-security-starts-with-better-questions/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon EFS now supports cross-account Replication in AWS GovCloud (US), allowing customers to replicate file systems between AWS accounts. EFS Replication enables you to easily…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-efs-cross-account-replication-aws-gov-cloud-us">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📦 Workload &amp; Supply Chain</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>If you use and install packages from npm or PyPI, the first hours after a package is published are the riskiest because scanners can’t analyze…      <a class="src" href="https://aws.amazon.com/blogs/security/secure-your-npm-and-pip-package-updates-in-amazon-linux/">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+
+  <footer>
+    <p>⚠️ sources unavailable today: none</p>
+    <p class="alert">⚙️ classifier ran in degraded mode (keyword) — precision is lower than usual</p>
+    <p>14 items shown · generated 2026-07-30 07:33 UTC</p>
+  </footer>
+</div>
+</body>
+</html>
