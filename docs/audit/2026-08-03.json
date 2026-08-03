@@ -1,0 +1,43 @@
+{
+ "run_at": "2026-08-03T08:27:52+00:00",
+ "classifier": {
+  "path": "none",
+  "calls": 0,
+  "unmatched_ids": [],
+  "omitted_ids": [],
+  "errors": []
+ },
+ "counts": {
+  "raw": 1439,
+  "fresh": 0,
+  "already_seen": 1439,
+  "prefiltered": 0,
+  "classified": 0,
+  "security": 0,
+  "shown": 0,
+  "overflow": 0
+ },
+ "per_source": {
+  "aws/security-blog": 20,
+  "azure/ms-security-blog": 10,
+  "gcp/gcp-security-blog": 20,
+  "aws/whats-new": 100,
+  "azure/service-updates": 200,
+  "gcp/release-notes": 845,
+  "oci/rn-cloud-guard": 22,
+  "oci/rn-identity": 50,
+  "oci/rn-data-safe": 50,
+  "oci/rn-network-firewall": 10,
+  "oci/rn-ztpr": 12,
+  "oci/rn-certificates": 4,
+  "oci/rn-bastion": 6,
+  "oci/rn-compute": 50,
+  "oci/rn-objectstorage": 40
+ },
+ "unavailable": {},
+ "alerts": [],
+ "shown": [],
+ "overflow": [],
+ "dropped_not_security": [],
+ "dropped_prefilter": []
+}
