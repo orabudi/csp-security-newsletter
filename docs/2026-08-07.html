@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🔐 Cloud Security TLDR — Fri 07 Aug 2026</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 16px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #16181d;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 10px;
+          padding: 28px 26px; border: 1px solid #e3e6ea; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .lede { font-size: 15px; background: #f2f5ff; border-left: 3px solid #4557d4;
+          padding: 12px 14px; border-radius: 0 6px 6px 0; margin: 0 0 22px;
+          white-space: pre-line; }
+  .note { font-size: 14px; color: #6b7280; font-style: italic; margin: 0 0 18px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em;
+       margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e8eaee;
+       color: #374151; }
+  h2.action { color: #a4302a; border-bottom-color: #f2d3d0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 11px; padding-left: 2px; font-size: 15px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+         padding: 1px 6px; border-radius: 4px; background: #eef0f4; color: #4b5563;
+         margin-right: 7px; vertical-align: 1px; }
+  .tag.aws { background: #fdf0e3; color: #9a5b12; }
+  .tag.azure { background: #e7f0fd; color: #12539a; }
+  .tag.gcp { background: #e8f3ec; color: #1a6b3c; }
+  .tag.oci { background: #fbe9e9; color: #9c2a2a; }
+  .estate { font-size: 11px; color: #a4302a; font-weight: 600; margin-left: 4px; }
+  a { color: #2a49c4; }
+  a.src { font-size: 12px; color: #6b7280; text-decoration: none; white-space: nowrap; }
+  a.src:hover { text-decoration: underline; }
+  .overflow li { font-size: 14px; color: #4b5563; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e8eaee;
+           font-size: 12px; color: #6b7280; }
+  footer p { margin: 4px 0; }
+  .alert { color: #a4302a; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1013; color: #e6e8ec; }
+    .wrap { background: #16181d; border-color: #262a31; }
+    .lede { background: #171d33; border-left-color: #6f81ea; }
+    h2 { color: #c3c8d1; border-bottom-color: #262a31; }
+    h2.action { color: #f08b83; border-bottom-color: #4a2723; }
+    .tag { background: #24272e; color: #b6bcc7; }
+    .date, .note, a.src, footer, .overflow li { color: #9aa1ad; }
+    a { color: #93a5ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔐 Cloud Security TLDR</h1>
+  <p class="date">Fri 07 Aug 2026</p>
+
+
+  <h2 class="">🔑 Identity &amp; Access</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Security teams investigating AI-related incidents need guardrail intervention data alongside their existing security telemetry. Routing Amazon Bedrock Guardrails violations to Amazon Security Lake makes this…      <a class="src" href="https://aws.amazon.com/blogs/security/route-amazon-bedrock-guardrails-interventions-to-amazon-security-lake/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS Security Agent (now part of AWS Continuum ) now enables penetration testing of applications that use email-based multi-factor authentication (MFA) as part of their…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-security-agent-mfa/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>The Policy Troubleshooter MCP server is generally available . To learn about using the Policy Troubleshooter MCP server to let agents and AI applications troubleshoot…      <a class="src" href="https://docs.cloud.google.com/release-notes#August_06_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Managed Streaming for Apache Kafka (MSK) now supports Authorizer Log Delivery for Provisioned clusters, including both Standard and Express brokers, at no additional cost…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-msk-kafka-authorizer-logs/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔒 Data Protection</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>This post assumes familiarity with envelope encryption and the AWS Encryption SDK . When your encryption system generates millions of duplicate API calls per hour…      <a class="src" href="https://aws.amazon.com/blogs/security/caching-kms-data-keys-in-multi-thread-environments-per-tenant-encryption-for-event-driven-systems-at-scale/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS Backup for Amazon S3 now supports creating S3 Access Points, providing immediate read-only access to backup data using standard S3 APIs without initiating a…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-backup-amazon-s3-direct-access/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Preview: Cloud KMS supports quantum-safe key import. You can use the following quantum-safe import methods: HPKE_KEM_XWING_HKDF_SHA256_AES_256_GCM HPKE_KEM_ML_KEM_768_HKDF_SHA256_AES_256_GCM HPKE_KEM_ML_KEM_1024_HKDF_SHA256_AES_256_GCM For more information about quantum-safe key import…      <a class="src" href="https://docs.cloud.google.com/release-notes#August_06_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon RDS now provides visibility into the initialization status of database storage volumes created from snapshots. You can use this status to determine when your…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-storage-volume-initialization-visibility">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🌐 Network Security</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Customers tell us that managing TLS certificates at scale is one of their biggest operational concerns. The Certification Authority Browser Forum (CA/Browser Forum) has mandated…      <a class="src" href="https://aws.amazon.com/blogs/security/automate-certificates-with-acme-support-in-aws-certificate-manager/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>VPC Service Controls feature: The VPC Service Controls service patterns feature is generally available . You can use service patterns to explicitly configure which Google…      <a class="src" href="https://docs.cloud.google.com/release-notes#August_06_2026">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📦 Workload &amp; Supply Chain</h2>
+  <ul>
+    <li>
+      <span class="tag gcp">GCP</span>The intersection of medicine and AI has led to remarkable innovations. However, developers now face the thorny challenge of building robust medical AI tools that…      <a class="src" href="https://cloud.google.com/blog/products/identity-security/privacy-first-medical-ai-with-medperf-and-google-cloud/">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+  <h2>➕ Also today — lower impact</h2>
+  <ul class="overflow">
+    <li>
+      <span class="tag gcp">GCP</span>When executing SQL queries using the execute_sql or execute_sql_readonly tool, the Cloud SQL remote MCP server now automatically appends SqlCommenter tags ( mcp.tool , mcp.server…
+      <a class="src" href="https://docs.cloud.google.com/release-notes#August_06_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS Backup logically air-gapped vault support for Amazon Neptune is now available in three additional AWS Regions: Asia Pacific (Melbourne), Europe (Spain), and Europe (Zurich)…
+      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-backup-logically-air-gapped-vault-neptune-regions/">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+  <footer>
+    <p>⚠️ sources unavailable today: none</p>
+    <p class="alert">⚙️ classifier ran in degraded mode (keyword) — precision is lower than usual</p>
+    <p>11 items shown, 2 lower-impact · generated 2026-08-07 06:09 UTC</p>
+  </footer>
+</div>
+</body>
+</html>
