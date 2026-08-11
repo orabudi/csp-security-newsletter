@@ -1,121 +1,111 @@
 {
  "version": 2,
- "last_run": "2026-08-10T06:09:46+00:00",
+ "last_run": "2026-08-11T05:53:08+00:00",
  "feeds": {
   "aws/security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-10T06:09:46+00:00"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "azure/ms-security-blog": {
    "consecutive_zero": 0,
-   "consecutive_fail": 1,
-   "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "HTTP 403"
+   "consecutive_fail": 0,
+   "last_count": 10,
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "gcp/gcp-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-10T06:09:46+00:00"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "aws/whats-new": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 100,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-10T06:09:46+00:00"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "azure/service-updates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 200,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-10T06:09:46+00:00"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "gcp/release-notes": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
-   "last_count": 1120,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-10T06:09:46+00:00"
+   "last_count": 1158,
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-cloud-guard": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-identity": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-data-safe": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-network-firewall": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-ztpr": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-certificates": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-bastion": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-compute": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   },
   "oci/rn-objectstorage": {
-   "consecutive_zero": 0,
-   "consecutive_fail": 1,
+   "consecutive_zero": 1,
+   "consecutive_fail": 0,
    "last_count": 0,
-   "last_run": "2026-08-10T06:09:46+00:00",
-   "last_ok": "2026-08-07T06:09:14+00:00",
-   "last_error": "unparseable feed"
+   "last_run": "2026-08-11T05:53:08+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00"
   }
  },
  "runs": [
@@ -217,6 +207,17 @@
     "oci/rn-objectstorage",
     "oci/rn-ztpr"
    ]
+  },
+  {
+   "at": "2026-08-11T05:53:08+00:00",
+   "raw": 1508,
+   "fresh": 24,
+   "shown": 9,
+   "overflow": 0,
+   "classifier": "keyword",
+   "delivered": [],
+   "failed_delivery": [],
+   "unavailable": []
   }
  ],
  "seen": {
@@ -2092,8 +2093,8 @@
   "318acb5b2687f0d1": "7751cc7cde0ce0fb|2026-08-07",
   "003378928919834c": "1d9bd1e076774408|2026-08-07",
   "e28e779d3f10f646": "0f94e22462fad433|2026-08-07",
-  "a19210c1d76137c5": "d8b32ced31d835e7|2026-08-07",
-  "54f31d86efe14332": "4f19c0d04da4cab1|2026-08-07",
+  "a19210c1d76137c5": "83df8099d4dbf6f4|2026-08-07",
+  "54f31d86efe14332": "313f8730c1557c2c|2026-08-07",
   "a8e46fa2b53bd3f8": "92d630c771ced9a5|2026-08-07",
   "cf0992bea2698b6d": "94ca5af4bf6c84f0|2026-08-07",
   "cc3fd368d3248236": "d5aa631fbcf6ecc0|2026-08-07",
@@ -2579,6 +2580,60 @@
   "939f5d934ec51e2f": "3383216780207c4e|2026-08-10",
   "c84aac61d5781bca": "a6ba6acfcb3a9d24|2026-08-10",
   "0fc3ee496aa2c912": "f57ae9e71596e20f|2026-08-10",
-  "c3efa0aec08de559": "76b081e05af1e68b|2026-08-10"
+  "c3efa0aec08de559": "76b081e05af1e68b|2026-08-10",
+  "6c196ada92075267": "2c2244b7cd9f94c3|2026-08-11",
+  "856638c68a3cda98": "cf6cc56fc840cdbe|2026-08-11",
+  "fed8c09738ce7cff": "f7110f9af847c4ba|2026-08-11",
+  "00d36f371f80246f": "7304b8825f342fce|2026-08-11",
+  "4817fe345ea928bc": "33519baedb0a327c|2026-08-11",
+  "a84acb576680b546": "bf3e2b11eb40c833|2026-08-11",
+  "cc0395734d20998e": "954104b742ce8f94|2026-08-11",
+  "2bf3756bb9e63fbe": "061e34489a9a8ac1|2026-08-11",
+  "c2299125bdbfd07e": "b3cacbd651cdd73e|2026-08-11",
+  "c37157647c9f7a66": "fafedf97f272955b|2026-08-11",
+  "e55bd5fb2e71fda4": "6f55140977c26d7c|2026-08-11",
+  "d8dfe225776d0478": "4f2813df38e89ed0|2026-08-11",
+  "cfb894e609e64cc2": "462cb154031f8f3c|2026-08-11",
+  "0db222b5c98eb19b": "d680992fa1d7e907|2026-08-11",
+  "bdf3a77ad1d1163f": "f92eb7190ca4d147|2026-08-11",
+  "3fb5d173bf873ca8": "1685d0d539230e38|2026-08-11",
+  "2ea4b1d71f2d5170": "28b9888240d6c340|2026-08-11",
+  "74452083b7a67191": "b2a5e7257becacf9|2026-08-11",
+  "eb3a5846edabf242": "1ec1c5682e426d0a|2026-08-11",
+  "9ca090ee8057d10d": "fabd6a031801dee5|2026-08-11",
+  "3893d2fd2dd61caf": "684a05ad5e8b99c7|2026-08-11",
+  "47fb56748f665b8e": "a7878dafdb163ce8|2026-08-11",
+  "b4ffc6d4c20e489b": "4e37d10d95be7a9d|2026-08-11",
+  "b71a9c9fd306fa05": "25f61b7cbc7f1014|2026-08-11",
+  "f6de861c0f606957": "7a9fb25d1ad184f7|2026-08-11",
+  "6510c3370e98f88e": "988f9181ae9070e7|2026-08-11",
+  "6815363f3771e8f9": "80bedee7452e99b8|2026-08-11",
+  "cc2d9a7450dff9bf": "4ef13129dd921063|2026-08-11",
+  "d6ccd1df20295ae5": "bd9cac83010becf5|2026-08-11",
+  "dd189a7acf916d47": "f946c2a3bad2bca9|2026-08-11",
+  "ca9b832e58352792": "d8b32ced31d835e7|2026-08-11",
+  "c7561af89afe6835": "94ca5af4bf6c84f0|2026-08-11",
+  "632e2fa19bf704d3": "73ee2e0f9763e2c7|2026-08-11",
+  "1f4fd9fb51935013": "73ee2e0f9763e2c7|2026-08-11",
+  "e13ddbee41b84104": "b7378a8afb347c05|2026-08-11",
+  "3ee93bdae5527042": "b7378a8afb347c05|2026-08-11",
+  "a6d231bf30919ec2": "73ee2e0f9763e2c7|2026-08-11",
+  "56c5c1eb5b53b9d3": "73ee2e0f9763e2c7|2026-08-11",
+  "8c98f231a3806d1e": "02b5a58839ecbc97|2026-08-11",
+  "d126fdfec543752c": "73ee2e0f9763e2c7|2026-08-11",
+  "bf3a2a457006ade1": "73ee2e0f9763e2c7|2026-08-11",
+  "1fae963c9bc19db8": "500e1c88893d09ee|2026-08-11",
+  "5c6f2eff686d36f0": "500e1c88893d09ee|2026-08-11",
+  "d7c3631c1f525244": "b7378a8afb347c05|2026-08-11",
+  "a0d1f6dded1def89": "b7378a8afb347c05|2026-08-11",
+  "e7f00d5f196e878b": "63960bdd46233136|2026-08-11",
+  "a44d7a76a979fea7": "63960bdd46233136|2026-08-11",
+  "57c048dd351e233e": "1b46b00e492b447b|2026-08-11",
+  "0c65e9360923e8a3": "1b46b00e492b447b|2026-08-11",
+  "06cc985e406da181": "0757f57fa6d29164|2026-08-11",
+  "7ee9f6465b276222": "0757f57fa6d29164|2026-08-11",
+  "7aba639cd4b67f94": "6f110f97a817a332|2026-08-11",
+  "c9c34b59cfb57151": "1ec1c5682e426d0a|2026-08-11",
+  "a3ec515d739e4642": "13c7d1bf51d43874|2026-08-11"
  }
 }
