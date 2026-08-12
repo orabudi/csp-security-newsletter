@@ -1,111 +1,120 @@
 {
  "version": 2,
- "last_run": "2026-08-11T05:53:08+00:00",
+ "last_run": "2026-08-12T06:13:25+00:00",
  "feeds": {
   "aws/security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-12T06:13:25+00:00"
   },
   "azure/ms-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 10,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-12T06:13:25+00:00"
   },
   "gcp/gcp-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-12T06:13:25+00:00"
   },
   "aws/whats-new": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 100,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-12T06:13:25+00:00"
   },
   "azure/service-updates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 200,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-12T06:13:25+00:00"
   },
   "gcp/release-notes": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
-   "last_count": 1158,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_count": 1142,
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-12T06:13:25+00:00"
   },
   "oci/rn-cloud-guard": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-identity": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-data-safe": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-network-firewall": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-ztpr": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-certificates": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-bastion": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-compute": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   },
   "oci/rn-objectstorage": {
    "consecutive_zero": 1,
-   "consecutive_fail": 0,
+   "consecutive_fail": 1,
    "last_count": 0,
-   "last_run": "2026-08-11T05:53:08+00:00",
-   "last_ok": "2026-08-11T05:53:08+00:00"
+   "last_run": "2026-08-12T06:13:25+00:00",
+   "last_ok": "2026-08-11T05:53:08+00:00",
+   "last_error": "unparseable feed"
   }
  },
  "runs": [
@@ -218,6 +227,27 @@
    "delivered": [],
    "failed_delivery": [],
    "unavailable": []
+  },
+  {
+   "at": "2026-08-12T06:13:25+00:00",
+   "raw": 1492,
+   "fresh": 43,
+   "shown": 12,
+   "overflow": 2,
+   "classifier": "keyword",
+   "delivered": [],
+   "failed_delivery": [],
+   "unavailable": [
+    "oci/rn-bastion",
+    "oci/rn-certificates",
+    "oci/rn-cloud-guard",
+    "oci/rn-compute",
+    "oci/rn-data-safe",
+    "oci/rn-identity",
+    "oci/rn-network-firewall",
+    "oci/rn-objectstorage",
+    "oci/rn-ztpr"
+   ]
   }
  ],
  "seen": {
@@ -1801,7 +1831,7 @@
   "2b461b77ba59963b": "79fca9a930b4b03d|2026-08-04",
   "875b8e62972ff52c": "fe77465d4b1ce184|2026-08-04",
   "b1a510e64bf385ab": "e5b02f5397680e1f|2026-08-04",
-  "b972cb2412163473": "100928172e696863|2026-08-04",
+  "b972cb2412163473": "4f6ad7ff7871793c|2026-08-04",
   "644822f2be1dfb90": "455d6431f4af2474|2026-08-04",
   "77dda674f5c9aabf": "5f28824070e068c4|2026-08-04",
   "b423479405c72610": "9872e4e97b54b464|2026-08-04",
@@ -2634,6 +2664,61 @@
   "7ee9f6465b276222": "0757f57fa6d29164|2026-08-11",
   "7aba639cd4b67f94": "6f110f97a817a332|2026-08-11",
   "c9c34b59cfb57151": "1ec1c5682e426d0a|2026-08-11",
-  "a3ec515d739e4642": "13c7d1bf51d43874|2026-08-11"
+  "a3ec515d739e4642": "13c7d1bf51d43874|2026-08-11",
+  "036b9f4293d88e42": "b996ebe62731ebb8|2026-08-12",
+  "162d15d7ee3c8b21": "2229c94ba227a831|2026-08-12",
+  "52c91ca8533c7237": "83825aa3a1aa0a35|2026-08-12",
+  "6b27759eb7d47fd0": "cca7fceb96f0666b|2026-08-12",
+  "532b1e4096bc9b35": "5aa25c3322135cb8|2026-08-12",
+  "8182580901597112": "9ae169c8190d484b|2026-08-12",
+  "9ce3bc1a3b00217a": "c67e834f5c0c2936|2026-08-12",
+  "e347d5c6166823b6": "cf5511357463fb3b|2026-08-12",
+  "94b576a862b4555e": "054958c4baddee7a|2026-08-12",
+  "5a724b28c602a396": "fc13b0582ca600ff|2026-08-12",
+  "a74fd4fe4073476c": "5f6992b3d9a99528|2026-08-12",
+  "faddb848c61698e4": "deba3d7f3fd004d7|2026-08-12",
+  "151618379a6cab82": "10ecf25974b1305e|2026-08-12",
+  "4ece60ebfaa84617": "701870b5ce023f45|2026-08-12",
+  "67987686fe24f59e": "bab6048277988b05|2026-08-12",
+  "35b8033d82241015": "841d702619a3d853|2026-08-12",
+  "6d73b8d2a9033fb8": "a24f5e772184466a|2026-08-12",
+  "fca654372d3edb42": "a6d2b9a1075f43c9|2026-08-12",
+  "ec812f45827cb696": "6e4d6df99988197b|2026-08-12",
+  "a4d4a8efbf693b44": "f61c88b97aacfd5d|2026-08-12",
+  "d0e6dc1689e2a958": "a52857c64467ea3a|2026-08-12",
+  "f1e5207dd464eb8b": "fc32f0253d2e3e0f|2026-08-12",
+  "facf69c0e8e0866f": "42c44fe41887fcbf|2026-08-12",
+  "9046eb27d23dc771": "eaf74ba1bc5befc7|2026-08-12",
+  "7f419b8aaaaf4004": "e525cf568e67255c|2026-08-12",
+  "fde5356103f25e40": "5d33198bbf0ad343|2026-08-12",
+  "699e1608886cf88f": "00e192501bf17a6d|2026-08-12",
+  "203e626b9c6ab60f": "0a638fc1399b276c|2026-08-12",
+  "55e094d3e98eedfb": "6669bd7ee7f122f9|2026-08-12",
+  "c6dad28a9f271517": "fcfe7866e41b4563|2026-08-12",
+  "e4eddf52805cf989": "70b623bb9d7f387d|2026-08-12",
+  "6feba897a9fb88bf": "3414ccdc4553a9a0|2026-08-12",
+  "0e4d2f0d3a9a11a9": "96f587d7d014b8f2|2026-08-12",
+  "bef2f49748012403": "d1d31e7281b5c8c5|2026-08-12",
+  "272cf29fdaba78a5": "a25e2e6b7b19ce44|2026-08-12",
+  "6b18580883ee4e3e": "e395a2a16dc354b9|2026-08-12",
+  "eff0c32102a7a411": "a238fe2b3dd04e86|2026-08-12",
+  "cfdec3d06e364783": "e643e75f5c258d91|2026-08-12",
+  "dd2e2cfc2ded3ea9": "45210a9d2a430d13|2026-08-12",
+  "a78e573f0cc89438": "77bcb03c59d21fb0|2026-08-12",
+  "d95fa58c6ceacab0": "76dc4ffe00b4e8d3|2026-08-12",
+  "d517d37c8a7cbd98": "327f9a9c0f7daa43|2026-08-12",
+  "05c8da4051097a92": "bd210128ca33c42e|2026-08-12",
+  "b2376c6faa74cf5c": "381b71fd29d4d354|2026-08-12",
+  "b54c01bd6e078eac": "bddf462f8c62a59a|2026-08-12",
+  "a48b03a03a5b93c2": "2d5354e3ca924d71|2026-08-12",
+  "2ddf3cedc9c03ad0": "299b9cd9e2418e75|2026-08-12",
+  "9b0329c343bd1a65": "5d42b66e1a5de398|2026-08-12",
+  "750d83e9d1cd472c": "ba2ade8bdde36e0a|2026-08-12",
+  "6b9703e53d72b479": "b84ba21505a7eada|2026-08-12",
+  "a8351138119fd6db": "15168e8951688c2e|2026-08-12",
+  "58667344ec83517a": "100928172e696863|2026-08-12",
+  "63611c642cd7efc3": "976e7cab8ea85c74|2026-08-12",
+  "45d4dd04817d4b80": "c88adb81727e2c2b|2026-08-12",
+  "18dfeb02684c3ec4": "c020308204e11414|2026-08-12"
  }
 }

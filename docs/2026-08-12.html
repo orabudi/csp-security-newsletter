@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🔐 Cloud Security TLDR — Wed 12 Aug 2026</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 16px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #16181d;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 10px;
+          padding: 28px 26px; border: 1px solid #e3e6ea; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .lede { font-size: 15px; background: #f2f5ff; border-left: 3px solid #4557d4;
+          padding: 12px 14px; border-radius: 0 6px 6px 0; margin: 0 0 22px;
+          white-space: pre-line; }
+  .note { font-size: 14px; color: #6b7280; font-style: italic; margin: 0 0 18px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em;
+       margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e8eaee;
+       color: #374151; }
+  h2.action { color: #a4302a; border-bottom-color: #f2d3d0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 11px; padding-left: 2px; font-size: 15px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+         padding: 1px 6px; border-radius: 4px; background: #eef0f4; color: #4b5563;
+         margin-right: 7px; vertical-align: 1px; }
+  .tag.aws { background: #fdf0e3; color: #9a5b12; }
+  .tag.azure { background: #e7f0fd; color: #12539a; }
+  .tag.gcp { background: #e8f3ec; color: #1a6b3c; }
+  .tag.oci { background: #fbe9e9; color: #9c2a2a; }
+  .estate { font-size: 11px; color: #a4302a; font-weight: 600; margin-left: 4px; }
+  a { color: #2a49c4; }
+  a.src { font-size: 12px; color: #6b7280; text-decoration: none; white-space: nowrap; }
+  a.src:hover { text-decoration: underline; }
+  .overflow li { font-size: 14px; color: #4b5563; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e8eaee;
+           font-size: 12px; color: #6b7280; }
+  footer p { margin: 4px 0; }
+  .alert { color: #a4302a; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1013; color: #e6e8ec; }
+    .wrap { background: #16181d; border-color: #262a31; }
+    .lede { background: #171d33; border-left-color: #6f81ea; }
+    h2 { color: #c3c8d1; border-bottom-color: #262a31; }
+    h2.action { color: #f08b83; border-bottom-color: #4a2723; }
+    .tag { background: #24272e; color: #b6bcc7; }
+    .date, .note, a.src, footer, .overflow li { color: #9aa1ad; }
+    a { color: #93a5ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔐 Cloud Security TLDR</h1>
+  <p class="date">Wed 12 Aug 2026</p>
+
+
+  <h2 class="action">⚠️ Action Needed</h2>
+  <ul>
+    <li>
+      <span class="tag gcp">GCP</span>(Google Cloud CLI) The google-cloud-sdk Snap package will be deprecated and removed on September 29th, 2026. Please migrate to the google-cloud-cli package. For more information…      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Updated gcloud beta metastore services migrations start to support migrations to Lakehouse runtime catalog(s). Deprecated Cloud SQL migration arguments in gcloud beta metastore services migrations…      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔑 Identity &amp; Access</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies, enabling you to build and…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-expands-iam-principal-cost-allocation-bedrock-mantle/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Added gcloud compute resource-policies test-iam-permissions command to test IAM permissions on a Compute Engine resource policy in GA, beta, preview, and alpha. Added gcloud compute…<span class="estate">· you run this</span>      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS Secrets Manager now extends its managed external secrets capability to include Jenkins API Tokens and SonarQube Tokens, enabling you to automatically rotate these third-party…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/08/secrets-manager-integration-jenkins-sonarqube/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Added support for X.509 certificate-based credentials and locational mTLS endpoints to gcloud iam workload-identity-pools create-cred-config .      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔒 Data Protection</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Organizations operating in Germany and across Europe increasingly need to demonstrate cloud security compliance under the Cloud Computing Compliance Criteria Catalogue (C5:2020) , published by…      <a class="src" href="https://aws.amazon.com/blogs/security/landing-zone-accelerator-independent-assessment-report-for-c52020-now-available-on-aws-artifact/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🌐 Network Security</h2>
+  <ul>
+    <li>
+      <span class="tag azure">Azure</span>Azure Firewall Premium now delivers up to 22 Gbps throughput with TLS inspection and IDPS in Deny mode, a 120% increase from 10 Gbps, and…      <a class="src" href="https://azure.microsoft.com/updates?id=569256">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📋 Governance &amp; Compliance</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Web Services (AWS) is pleased to announce its successful completion of the 2025-26 NHS Data Security and Protection Toolkit (NHS DSPT) assessment audit and…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/blogs/security/aws-successfully-completed-its-2025-26-nhs-dspt-assessment/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Web Services (AWS) is pleased to announce that the Summer 2026 System and Organization Controls (SOC) 1 report is now available. The reports cover…      <a class="src" href="https://aws.amazon.com/blogs/security/summer-2026-soc-1-report-is-now-available-with-185-services-in-scope/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Securing infrastructure and services against a future cryptographically-relevant quantum computer has been a goal for Google for a decade, and we’ve dedicated ourselves to help…      <a class="src" href="https://cloud.google.com/blog/products/identity-security/pqc-in-plaintext-google-clouds-post-quantum-cryptography-roadmap/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Promoted mcp and policyProfile fields to GA in gcloud network-security authz-policies import and export commands. Made loadBalancingScheme optional in gcloud network-security authz-policies import and export…      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+  <h2>➕ Also today — lower impact</h2>
+  <ul class="overflow">
+    <li>
+      <span class="tag gcp">GCP</span>Fixed Google Compute Engine residency detection to prevent authentication failures due to transient issues and command latency regressions in non-Google Cloud environments.
+      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag gcp">GCP</span>Added --tags flag to gcloud certificate-manager create commands ( certificates create , dns-authorizations create , issuance-configs create , maps create , and trust-configs create ).
+      <a class="src" href="https://docs.cloud.google.com/release-notes#August_11_2026">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+  <footer>
+    <p>⚠️ sources unavailable today: oci/rn-bastion, oci/rn-certificates, oci/rn-cloud-guard, oci/rn-compute, oci/rn-data-safe, oci/rn-identity, oci/rn-network-firewall, oci/rn-objectstorage, oci/rn-ztpr</p>
+    <p class="alert">⚙️ classifier ran in degraded mode (keyword) — precision is lower than usual</p>
+    <p>12 items shown, 2 lower-impact · generated 2026-08-12 06:13 UTC</p>
+  </footer>
+</div>
+</body>
+</html>
