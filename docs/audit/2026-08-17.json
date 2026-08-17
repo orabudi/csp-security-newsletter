@@ -1,0 +1,71 @@
+{
+ "run_at": "2026-08-17T05:34:08+00:00",
+ "classifier": {
+  "path": "keyword",
+  "calls": 0,
+  "unmatched_ids": [],
+  "omitted_ids": [],
+  "errors": [
+   "no LLM provider configured"
+  ]
+ },
+ "counts": {
+  "raw": 1831,
+  "fresh": 1,
+  "already_seen": 1830,
+  "prefiltered": 0,
+  "classified": 1,
+  "security": 1,
+  "shown": 1,
+  "overflow": 0
+ },
+ "per_source": {
+  "aws/security-blog": 20,
+  "azure/ms-security-blog": 10,
+  "gcp/gcp-security-blog": 20,
+  "aws/whats-new": 100,
+  "azure/service-updates": 200,
+  "gcp/release-notes": 1234,
+  "oci/rn-cloud-guard": 22,
+  "oci/rn-identity": 50,
+  "oci/rn-data-safe": 50,
+  "oci/rn-network-firewall": 10,
+  "oci/rn-ztpr": 12,
+  "oci/rn-certificates": 4,
+  "oci/rn-bastion": 6,
+  "oci/rn-compute": 50,
+  "oci/rn-objectstorage": 43
+ },
+ "unavailable": {},
+ "alerts": [],
+ "shown": [
+  {
+   "id": "e557638f6e0a8963",
+   "provider": "gcp",
+   "source": "gcp/release-notes",
+   "source_tier": 2,
+   "service": "Google SecOps SOAR",
+   "title": "Google SecOps SOAR: Release 6.3.98 is being rolled out to the first phase of regions as listed here . This release contains internal and customer bug fixes.",
+   "url": "https://docs.cloud.google.com/release-notes#August_16_2026",
+   "published_at": "2026-08-16T07:00:00+00:00",
+   "blurb": "Release 6.3.98 is being rolled out to the first phase of regions as listed here . This release contains internal and customer bug fixes.",
+   "content_hash": "66325e6f80abdb93",
+   "raw_category": "Announcement",
+   "status": "August 16, 2026",
+   "is_security": true,
+   "category": "detection",
+   "tldr": "Release 6.3.98 is being rolled out to the first phase of regions as listed here . This release contains internal and customer bug fixes.",
+   "impact": "low",
+   "action_required": false,
+   "score": 40.0,
+   "promote_reason": null,
+   "estate_hit": null,
+   "security_service_hit": "Google SecOps",
+   "classified_by": "keyword",
+   "drop_reason": null
+  }
+ ],
+ "overflow": [],
+ "dropped_not_security": [],
+ "dropped_prefilter": []
+}
