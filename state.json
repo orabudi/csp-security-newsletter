@@ -1,111 +1,111 @@
 {
  "version": 2,
- "last_run": "2026-09-03T09:28:42+00:00",
+ "last_run": "2026-09-04T09:20:22+00:00",
  "feeds": {
   "aws/security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "azure/ms-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 10,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "gcp/gcp-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "aws/whats-new": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 100,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "azure/service-updates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 200,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "gcp/release-notes": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
-   "last_count": 1477,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_count": 1059,
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-cloud-guard": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 22,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-identity": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-data-safe": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-network-firewall": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 12,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-ztpr": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 12,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-certificates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 4,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-bastion": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 6,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-compute": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   },
   "oci/rn-objectstorage": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 43,
-   "last_run": "2026-09-03T09:28:42+00:00",
-   "last_ok": "2026-09-03T09:28:42+00:00"
+   "last_run": "2026-09-04T09:20:22+00:00",
+   "last_ok": "2026-09-04T09:20:22+00:00"
   }
  },
  "runs": [
@@ -410,6 +410,17 @@
    "raw": 2076,
    "fresh": 13,
    "shown": 8,
+   "overflow": 0,
+   "classifier": "keyword",
+   "delivered": [],
+   "failed_delivery": [],
+   "unavailable": []
+  },
+  {
+   "at": "2026-09-04T09:20:22+00:00",
+   "raw": 1658,
+   "fresh": 16,
+   "shown": 5,
    "overflow": 0,
    "classifier": "keyword",
    "delivered": [],
@@ -1503,7 +1514,7 @@
   "34d21ed04e4c1a76": "e22473ece342fa8f|2026-07-30",
   "450acd35b1b1b65a": "6ba6bcd70fd695bd|2026-07-30",
   "18ec96d5c918c352": "a6c0e4da3873444f|2026-07-30",
-  "59f137b2701c7e68": "6638188071cec538|2026-07-30",
+  "59f137b2701c7e68": "25a6910356d89f55|2026-07-30",
   "7b202d0f2179b420": "e7e1e6340ccddd8b|2026-07-30",
   "619f1aa00188b56f": "70b464045127b8d8|2026-07-30",
   "180bbe802016bf60": "72ed40e9343b6ddf|2026-07-30",
@@ -4190,6 +4201,60 @@
   "86801c0080791a23": "8e66c8c01d9ec451|2026-09-03",
   "50de7f5c070b7dd0": "5ce04f2a0c8499fa|2026-09-03",
   "62571ee1177c909d": "3e11fc69ad53977b|2026-09-03",
-  "1d3fadc92f0ff8df": "0464f9b889e7b426|2026-09-03"
+  "1d3fadc92f0ff8df": "0464f9b889e7b426|2026-09-03",
+  "fda50b599a575857": "c77dd985cde27dd7|2026-09-04",
+  "ab1c95691bc7c14b": "8ad790e0da980451|2026-09-04",
+  "65788540b01fd50f": "bb29126ad43b0d11|2026-09-04",
+  "a4c1523c4eddde2f": "0154294b260dcf2a|2026-09-04",
+  "4ed8f1ac33f683d2": "3067dbaefa44cd39|2026-09-04",
+  "f67b619b0e8ff4b8": "159eea60fffc11fe|2026-09-04",
+  "a3994abc64a162fe": "525a5f2912fbc83f|2026-09-04",
+  "42672d804f781e7b": "1f4cc4d0cbda687b|2026-09-04",
+  "6c943378969cfbd1": "550e8494519e86b2|2026-09-04",
+  "950f29a9d42b67db": "4de5564d06800e93|2026-09-04",
+  "8ccdb94d2a5a7765": "ae3afbb1f508845c|2026-09-04",
+  "ebfd9353c1a0a9f0": "fc0a1bcfe6ad2f81|2026-09-04",
+  "5aa59bd386205e92": "1369fcf90d56e880|2026-09-04",
+  "1e6f83f515f24981": "3dabae59402b05fd|2026-09-04",
+  "fa21bd5624eb6e9f": "403a089782d82f49|2026-09-04",
+  "cf68cf277f18e6e2": "a189b2018a3a36aa|2026-09-04",
+  "15b50955efb55f94": "6314e520697d0c67|2026-09-04",
+  "9ee4ff33035e577f": "587d27a8d2456b87|2026-09-04",
+  "4db66294624fb19b": "6dc01d05399c4f6f|2026-09-04",
+  "7ca414c4e4fe9161": "2877a1ad0f55619e|2026-09-04",
+  "b787664783b49164": "c1a2c762e25d77fc|2026-09-04",
+  "68ee93ba28c89f1b": "53cb2e53646cc142|2026-09-04",
+  "5522709d3bf47ec5": "198ba0a26a7b57d4|2026-09-04",
+  "0022ebf20c638d45": "a4c2949e6eb2ed9d|2026-09-04",
+  "38e3c5a4660f5861": "6f5d5c91c10403aa|2026-09-04",
+  "a34620217206ee43": "c13e448622d2fdb3|2026-09-04",
+  "d462495a107fce39": "a804b4aa28c73152|2026-09-04",
+  "d935a6f034762b28": "d075b4602e04b78e|2026-09-04",
+  "404833cb2a3f3547": "d7708453b567b19f|2026-09-04",
+  "9f14a227c74f98c2": "8a02dd9c74dcbb6b|2026-09-04",
+  "c469a4028bde1aab": "be2fa54fa1205513|2026-09-04",
+  "19d9c1808c98a6d8": "2a94623e695f021b|2026-09-04",
+  "20a7f1bc4f5dac98": "8fd6e6ab6a53c897|2026-09-04",
+  "79c9c17e53bdc949": "918c7ac8dae54d36|2026-09-04",
+  "fbd7d2efb43a859d": "6d575b45bf0d2208|2026-09-04",
+  "7bc5c6ccf2203013": "3b464ef6d3dc6cc3|2026-09-04",
+  "250a7f394f1746dd": "0817c7011c7db121|2026-09-04",
+  "83e8197eed728b52": "d8810bc84bc5eb49|2026-09-04",
+  "67dd13fe3ae04c43": "0c55150eb405c036|2026-09-04",
+  "6229899a680b159c": "e1203b0d0fa71cb9|2026-09-04",
+  "bffe54027aa1b55f": "0a5dc467a234b019|2026-09-04",
+  "ef6e19d7a100cd3c": "3a53a89399b5a063|2026-09-04",
+  "8f10baa49545e14f": "b4dfe1ad76a3eaa4|2026-09-04",
+  "cef0f50f6f7506b4": "131ebfcc9eab9cf5|2026-09-04",
+  "f458e53298c9d809": "37ba79e1d139e6ce|2026-09-04",
+  "5695a3986d19425e": "264dd21d8b86dd09|2026-09-04",
+  "fbb6b6fef604308f": "ba725dc4ccb77008|2026-09-04",
+  "efe4e448bb068e4f": "36d9331d4d21ca79|2026-09-04",
+  "9e435823a99b52ee": "0bcb11249538415d|2026-09-04",
+  "9e6b6629b078f8d6": "e8d1940ebcb4227d|2026-09-04",
+  "a4b106278754e9a9": "f1096b8b5a85acba|2026-09-04",
+  "ee11bcdc5080ba43": "87e706e8afb71330|2026-09-04",
+  "b5030b705e3abb59": "3546c38d83ad950a|2026-09-04",
+  "4b71fb0da8af2bda": "3bbc4cf1f4f32e42|2026-09-04"
  }
 }
