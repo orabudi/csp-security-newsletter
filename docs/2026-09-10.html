@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🔐 Cloud Security TLDR — Thu 10 Sep 2026</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 16px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #16181d;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 10px;
+          padding: 28px 26px; border: 1px solid #e3e6ea; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .lede { font-size: 15px; background: #f2f5ff; border-left: 3px solid #4557d4;
+          padding: 12px 14px; border-radius: 0 6px 6px 0; margin: 0 0 22px;
+          white-space: pre-line; }
+  .note { font-size: 14px; color: #6b7280; font-style: italic; margin: 0 0 18px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em;
+       margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e8eaee;
+       color: #374151; }
+  h2.action { color: #a4302a; border-bottom-color: #f2d3d0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 11px; padding-left: 2px; font-size: 15px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+         padding: 1px 6px; border-radius: 4px; background: #eef0f4; color: #4b5563;
+         margin-right: 7px; vertical-align: 1px; }
+  .tag.aws { background: #fdf0e3; color: #9a5b12; }
+  .tag.azure { background: #e7f0fd; color: #12539a; }
+  .tag.gcp { background: #e8f3ec; color: #1a6b3c; }
+  .tag.oci { background: #fbe9e9; color: #9c2a2a; }
+  .estate { font-size: 11px; color: #a4302a; font-weight: 600; margin-left: 4px; }
+  a { color: #2a49c4; }
+  a.src { font-size: 12px; color: #6b7280; text-decoration: none; white-space: nowrap; }
+  a.src:hover { text-decoration: underline; }
+  .overflow li { font-size: 14px; color: #4b5563; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e8eaee;
+           font-size: 12px; color: #6b7280; }
+  footer p { margin: 4px 0; }
+  .alert { color: #a4302a; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1013; color: #e6e8ec; }
+    .wrap { background: #16181d; border-color: #262a31; }
+    .lede { background: #171d33; border-left-color: #6f81ea; }
+    h2 { color: #c3c8d1; border-bottom-color: #262a31; }
+    h2.action { color: #f08b83; border-bottom-color: #4a2723; }
+    .tag { background: #24272e; color: #b6bcc7; }
+    .date, .note, a.src, footer, .overflow li { color: #9aa1ad; }
+    a { color: #93a5ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔐 Cloud Security TLDR</h1>
+  <p class="date">Thu 10 Sep 2026</p>
+
+
+  <h2 class="">🔑 Identity &amp; Access</h2>
+  <ul>
+    <li>
+      <span class="tag azure">Azure</span>Announcing the addition of enhanced secure authentication in Azure Storage that combines the flexibility of user-delegation shared access signature (SAS) with the user-bound access of…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=569241">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>In this article Attack chain overview Attribution Mitigation and protection guidance Learn more Microsoft Security Research is tracking active cloud-based intrusions spanning multiple accounts in…      <a class="src" href="https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>In this article Overview Technique Catalog Privilege Escalation Mitigation and protection guidance References Learn more Microsoft introduces the cloud web applications threat matrix, a MITRE…      <a class="src" href="https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS announces the CheckIngestedDocumentAcl and GetIngestedDocumentAcl APIs for Amazon Bedrock Managed Knowledge Base, giving customers a self-service way to debug document access issues and audit…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-knowledge-base-debugging-document-access-control/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔒 Data Protection</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Elastic Block Store (Amazon EBS) Volume Clones now supports copying EBS volumes across AWS accounts with re-encryption. You can copy EBS volumes to any…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/09/ebs-volume-clones-cross-account-copy/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🛡️ Detection &amp; Response</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Security teams are starting to actively use AI for security work, including vulnerability triage, penetration testing, threat modeling, incident response, and code review. The promise…      <a class="src" href="https://aws.amazon.com/blogs/security/the-state-of-ai-for-security-measuring-what-matters-most-for-building-trust/">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+
+  <footer>
+    <p>⚠️ sources unavailable today: none</p>
+    <p class="alert">⚙️ classifier ran in degraded mode (keyword) — precision is lower than usual</p>
+    <p>6 items shown · generated 2026-09-10 09:24 UTC</p>
+  </footer>
+</div>
+</body>
+</html>
