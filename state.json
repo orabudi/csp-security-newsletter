@@ -1,111 +1,111 @@
 {
  "version": 2,
- "last_run": "2026-09-11T09:22:25+00:00",
+ "last_run": "2026-09-14T10:20:34+00:00",
  "feeds": {
   "aws/security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "azure/ms-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 10,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "gcp/gcp-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "aws/whats-new": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 100,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "azure/service-updates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 200,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "gcp/release-notes": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
-   "last_count": 1055,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_count": 1005,
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-cloud-guard": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 22,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-identity": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-data-safe": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-network-firewall": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 12,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-ztpr": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 12,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-certificates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 4,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-bastion": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 6,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-compute": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   },
   "oci/rn-objectstorage": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 43,
-   "last_run": "2026-09-11T09:22:25+00:00",
-   "last_ok": "2026-09-11T09:22:25+00:00"
+   "last_run": "2026-09-14T10:20:34+00:00",
+   "last_ok": "2026-09-14T10:20:34+00:00"
   }
  },
  "runs": [
@@ -478,6 +478,17 @@
    "shown": 6,
    "overflow": 0,
    "classifier": "keyword",
+   "delivered": [],
+   "failed_delivery": [],
+   "unavailable": []
+  },
+  {
+   "at": "2026-09-14T10:20:34+00:00",
+   "raw": 1604,
+   "fresh": 0,
+   "shown": 0,
+   "overflow": 0,
+   "classifier": "none",
    "delivered": [],
    "failed_delivery": [],
    "unavailable": []
@@ -4579,7 +4590,7 @@
   "6e7053d9a7821534": "1369fcf90d56e880|2026-09-10",
   "256b4473029f5aa8": "ae472acee02815e7|2026-09-10",
   "da094fd03a36b19c": "845a768b61c0ec4a|2026-09-10",
-  "35fba80e9a4b07c3": "d006b842ff2f8bf0|2026-09-10",
+  "35fba80e9a4b07c3": "b45982881ef0a2f5|2026-09-10",
   "d5c38cf58e4660ed": "8fd6e6ab6a53c897|2026-09-10",
   "ad1018b6e07240ef": "dad98f4413c4b584|2026-09-10",
   "310df074317c9f0b": "671d3e5d4f60ad24|2026-09-10",
@@ -4645,6 +4656,39 @@
   "eec752439c8fd25f": "7593731335cb62f3|2026-09-11",
   "43c36327e8868ce5": "45b5e7e0fa6c5967|2026-09-11",
   "94cd55529448668c": "f6abe34ec0daf971|2026-09-11",
-  "afc49a6639ebe081": "7ad3c35ada75af9a|2026-09-11"
+  "afc49a6639ebe081": "7ad3c35ada75af9a|2026-09-11",
+  "db656f37ff59efea": "fc8c8fd917c18311|2026-09-14",
+  "0bd906a3ed21dad9": "e268378457cf2f60|2026-09-14",
+  "11c1b9cbe1143cf8": "c9e5fb20cdb3809f|2026-09-14",
+  "4570968d29d574a4": "ef78935d783061ce|2026-09-14",
+  "8a6454e6f5d3b0fe": "2f35211b9f765e9f|2026-09-14",
+  "3ecfb0005df72599": "23a1b06c9abe3154|2026-09-14",
+  "9ef71c197bdf895b": "f8e738fd93cd1480|2026-09-14",
+  "f8bb6b46617a1471": "87eaaaf4a14c644d|2026-09-14",
+  "b5bd59afc035e77b": "00074309d998541a|2026-09-14",
+  "f160dc4dd747b1dc": "069c26f5e3d91856|2026-09-14",
+  "b999f5bc7657d5b0": "3a7da6414e4ea024|2026-09-14",
+  "1070aa5d2757fe1c": "4fb694db2bc5fd9e|2026-09-14",
+  "eda05321206d917a": "819703154a4f8376|2026-09-14",
+  "2dd6cde4c021d475": "b5174256f0f54628|2026-09-14",
+  "f8aa2a36512b073a": "801386cba6c1bbf4|2026-09-14",
+  "a25c0b76555eb6cc": "c1ccdcfe150df2a2|2026-09-14",
+  "9199491e275f2c6b": "98f159c4b0348b03|2026-09-14",
+  "4981553584b2c10f": "1fe7be43f80b3517|2026-09-14",
+  "c4c1e324d6ec0bbb": "8ed001205c9dc36b|2026-09-14",
+  "9025f6a1175c55ef": "1dd91de1436e4632|2026-09-14",
+  "0176d5ca94ce6b58": "70056f12e1076fe7|2026-09-14",
+  "0d6433a2e590c315": "3d786f59029a0971|2026-09-14",
+  "8c5303d7e4fb7107": "f0b9d0cf50621ae8|2026-09-14",
+  "4af9e2143b1579f3": "a2ed336cd39f27a2|2026-09-14",
+  "edc8aef1e645931c": "6108ddf20d3d050a|2026-09-14",
+  "20b54bb5667ba1f9": "a465d4391f46f0da|2026-09-14",
+  "89a10bcf95e4af0e": "43cfc755d5ff4720|2026-09-14",
+  "07bf38c4f4d016ab": "7ebb322aec2c948b|2026-09-14",
+  "759873521de4d736": "7668c0eabae70e59|2026-09-14",
+  "6187709b313c6524": "b2aace8d64dcbb88|2026-09-14",
+  "1423deca0a6872d6": "42055b35ed9d649c|2026-09-14",
+  "8683bb02022e66a2": "e7a22c57ee318963|2026-09-14",
+  "91aabbecaffd0889": "c856524df30bfc3b|2026-09-14"
  }
 }
