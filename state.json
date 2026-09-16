@@ -1,111 +1,111 @@
 {
  "version": 2,
- "last_run": "2026-09-15T09:47:29+00:00",
+ "last_run": "2026-09-16T09:41:42+00:00",
  "feeds": {
   "aws/security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "azure/ms-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 10,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "gcp/gcp-security-blog": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 20,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "aws/whats-new": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 100,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "azure/service-updates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 200,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "gcp/release-notes": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
-   "last_count": 1003,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_count": 1006,
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-cloud-guard": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 22,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-identity": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-data-safe": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-network-firewall": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 12,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-ztpr": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 12,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-certificates": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 4,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-bastion": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 6,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-compute": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 50,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   },
   "oci/rn-objectstorage": {
    "consecutive_zero": 0,
    "consecutive_fail": 0,
    "last_count": 43,
-   "last_run": "2026-09-15T09:47:29+00:00",
-   "last_ok": "2026-09-15T09:47:29+00:00"
+   "last_run": "2026-09-16T09:41:42+00:00",
+   "last_ok": "2026-09-16T09:41:42+00:00"
   }
  },
  "runs": [
@@ -498,6 +498,17 @@
    "raw": 1602,
    "fresh": 7,
    "shown": 1,
+   "overflow": 0,
+   "classifier": "keyword",
+   "delivered": [],
+   "failed_delivery": [],
+   "unavailable": []
+  },
+  {
+   "at": "2026-09-16T09:41:42+00:00",
+   "raw": 1605,
+   "fresh": 10,
+   "shown": 5,
    "overflow": 0,
    "classifier": "keyword",
    "delivered": [],
@@ -4740,6 +4751,65 @@
   "2f3499ce1c1529e6": "5ce7fb428c4c39ff|2026-09-15",
   "55ce341bbf0ca583": "4fbf17c5d42bac5c|2026-09-15",
   "d63eaba3b3103201": "dad98f4413c4b584|2026-09-15",
-  "2a972453ec786fae": "901c04a783bb3a3c|2026-09-15"
+  "2a972453ec786fae": "901c04a783bb3a3c|2026-09-15",
+  "de3cda29de9c43aa": "8e915ea4288c0870|2026-09-16",
+  "9a2d3a2332bdbc08": "a7f3e58185015c57|2026-09-16",
+  "2037a2c17a7ef4dc": "e7d20a73ed599ad6|2026-09-16",
+  "7c6848f6ee5f4cb5": "f4a8348cd3f0713f|2026-09-16",
+  "0793958e264dc253": "04b5f4966348c6a8|2026-09-16",
+  "b4fb62cf70f8db2f": "a73b797010066c37|2026-09-16",
+  "3648a32329d1cbd0": "50ec5e1861772a03|2026-09-16",
+  "8f4083977b81043e": "e1252eb71e3a063a|2026-09-16",
+  "3f81961704a56052": "ca4a8d4cd118bae0|2026-09-16",
+  "bf543fb9c94388a0": "b4c535894ff1200f|2026-09-16",
+  "9b57118afafc94a9": "720f6d194e788478|2026-09-16",
+  "e989fcf7db4e9e0a": "5f83bd8f2279f077|2026-09-16",
+  "9f4217982b9e282f": "e19e25d10254624e|2026-09-16",
+  "b4ce07774d7d2a99": "414b24d8b7e87fee|2026-09-16",
+  "2b4e0fbe31eb3f1d": "09f2af2f42c9632f|2026-09-16",
+  "40d762f060399e40": "e7e49d455b01b81c|2026-09-16",
+  "903f9a96c78a9350": "458b32cb0d12b8bd|2026-09-16",
+  "04aea55f681c0bac": "1d1a0b445262c6d6|2026-09-16",
+  "792d112b7b1a1d20": "1940aba80dab1c92|2026-09-16",
+  "a5dcd1c93e53ceda": "de94e8e2437f4ee4|2026-09-16",
+  "e24eee99ccce8888": "71210f8d40c16545|2026-09-16",
+  "870e107024199605": "5ecbee7b6806b613|2026-09-16",
+  "9f8fea821b4b1a9c": "5fa9608d47b1d02e|2026-09-16",
+  "980d04b1d438008e": "93acfcc716c4070a|2026-09-16",
+  "21ddf4a2624391f6": "2c5f354955a71026|2026-09-16",
+  "6a2663cadf6d0b81": "b8ae0d7acc5c5a83|2026-09-16",
+  "9eae1a726999d712": "1c141a0ae15beff4|2026-09-16",
+  "cd54e6a5851d427c": "e382d70bdbef20fc|2026-09-16",
+  "6e78f926899a0475": "8b1a904ef6d2b9c0|2026-09-16",
+  "df2a6c4b932811d7": "f42018a2076bf85c|2026-09-16",
+  "a342de7cbe138bfc": "07052f3c3ebc316f|2026-09-16",
+  "632f574a731b5921": "85f11aec295115c5|2026-09-16",
+  "c3ce533440fa6675": "26b77aba5d6f299d|2026-09-16",
+  "47c58a798b3ca133": "99fbe03aa5d7acd4|2026-09-16",
+  "e647f8f6d3765eb4": "24a074e92b008474|2026-09-16",
+  "c0352ca1a11af0d1": "a14d7061e495228b|2026-09-16",
+  "7428b55c7c2fab79": "3c881b033d56260b|2026-09-16",
+  "7d6ba03afc76bb23": "b317e1c8a2db713a|2026-09-16",
+  "61e57936fd77fd43": "2d8b5d372d5df342|2026-09-16",
+  "3d489c84e027e162": "bc640966a01beeed|2026-09-16",
+  "6b972d586202a256": "94695de893151f17|2026-09-16",
+  "013be316f8be7dff": "7e0eb9bde83093c7|2026-09-16",
+  "125ece636605f121": "e68c057be0b80e9d|2026-09-16",
+  "75dfdd2bd24ca237": "73ee2e0f9763e2c7|2026-09-16",
+  "9ea4f006f40d69f1": "73ee2e0f9763e2c7|2026-09-16",
+  "e57357d09ad3bf4e": "897556fa8bd410f9|2026-09-16",
+  "e3b5fb84764f7c79": "897556fa8bd410f9|2026-09-16",
+  "891e2b11d74c1ed6": "73ee2e0f9763e2c7|2026-09-16",
+  "d688a83624d06038": "73ee2e0f9763e2c7|2026-09-16",
+  "87d9fe3812e571cf": "519e01607c1693bb|2026-09-16",
+  "7a56f576b6365361": "7873b0a0d70c0e0a|2026-09-16",
+  "dae7e450c58bf582": "897556fa8bd410f9|2026-09-16",
+  "ba388ed0579f9660": "519e01607c1693bb|2026-09-16",
+  "bb794e1578345ede": "897556fa8bd410f9|2026-09-16",
+  "36ed5c6d7e209059": "73ee2e0f9763e2c7|2026-09-16",
+  "45a023404e9ae9f8": "897556fa8bd410f9|2026-09-16",
+  "2929899f16e27cf3": "73ee2e0f9763e2c7|2026-09-16",
+  "8c28e7aa573d6cce": "897556fa8bd410f9|2026-09-16",
+  "1c573c6852ef230c": "a79b2c1128661bb2|2026-09-16"
  }
 }
