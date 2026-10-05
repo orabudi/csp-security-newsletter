@@ -1,0 +1,71 @@
+{
+ "run_at": "2026-10-05T12:03:40+00:00",
+ "classifier": {
+  "path": "keyword",
+  "calls": 0,
+  "unmatched_ids": [],
+  "omitted_ids": [],
+  "errors": [
+   "no LLM provider configured"
+  ]
+ },
+ "counts": {
+  "raw": 1431,
+  "fresh": 1,
+  "already_seen": 1430,
+  "prefiltered": 0,
+  "classified": 1,
+  "security": 1,
+  "shown": 1,
+  "overflow": 0
+ },
+ "per_source": {
+  "aws/security-blog": 20,
+  "azure/ms-security-blog": 10,
+  "gcp/gcp-security-blog": 20,
+  "aws/whats-new": 100,
+  "azure/service-updates": 200,
+  "gcp/release-notes": 832,
+  "oci/rn-cloud-guard": 22,
+  "oci/rn-identity": 50,
+  "oci/rn-data-safe": 50,
+  "oci/rn-network-firewall": 12,
+  "oci/rn-ztpr": 12,
+  "oci/rn-certificates": 4,
+  "oci/rn-bastion": 6,
+  "oci/rn-compute": 50,
+  "oci/rn-objectstorage": 43
+ },
+ "unavailable": {},
+ "alerts": [],
+ "shown": [
+  {
+   "id": "9c694559274ac2c6",
+   "provider": "gcp",
+   "source": "gcp/release-notes",
+   "source_tier": 2,
+   "service": "Google SecOps SIEM",
+   "title": "Google SecOps SIEM: [Spotlight Feature] Terraform and client libraries for multiple features using Chronicle API Terraform providers and Google Cloud client libraries are now…",
+   "url": "https://docs.cloud.google.com/release-notes#October_05_2026",
+   "published_at": "2026-10-05T07:00:00+00:00",
+   "blurb": "[Spotlight Feature] Terraform and client libraries for multiple features using Chronicle API Terraform providers and Google Cloud client libraries are now available for several Google SecOps features using Chronicle API including Feeds, Parsers, Rules, Findings Refinements, Retrohunts, Dashboards, Data Tables, Watchlists, Custom Lists, Environments, Environment Groups, Data Export, SOAR Domains…",
+   "content_hash": "4460b1e0fc56525b",
+   "raw_category": "Feature",
+   "status": "October 05, 2026",
+   "is_security": true,
+   "category": "detection",
+   "tldr": "[Spotlight Feature] Terraform and client libraries for multiple features using Chronicle API Terraform providers and Google Cloud client libraries are now available for several Google…",
+   "impact": "medium",
+   "action_required": false,
+   "score": 70.0,
+   "promote_reason": null,
+   "estate_hit": null,
+   "security_service_hit": "Google SecOps",
+   "classified_by": "keyword",
+   "drop_reason": null
+  }
+ ],
+ "overflow": [],
+ "dropped_not_security": [],
+ "dropped_prefilter": []
+}
