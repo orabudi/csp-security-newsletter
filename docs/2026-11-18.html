@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🔐 Cloud Security TLDR — Wed 18 Nov 2026</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 16px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #16181d;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 10px;
+          padding: 28px 26px; border: 1px solid #e3e6ea; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .lede { font-size: 15px; background: #f2f5ff; border-left: 3px solid #4557d4;
+          padding: 12px 14px; border-radius: 0 6px 6px 0; margin: 0 0 22px;
+          white-space: pre-line; }
+  .note { font-size: 14px; color: #6b7280; font-style: italic; margin: 0 0 18px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em;
+       margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e8eaee;
+       color: #374151; }
+  h2.action { color: #a4302a; border-bottom-color: #f2d3d0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 11px; padding-left: 2px; font-size: 15px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+         padding: 1px 6px; border-radius: 4px; background: #eef0f4; color: #4b5563;
+         margin-right: 7px; vertical-align: 1px; }
+  .tag.aws { background: #fdf0e3; color: #9a5b12; }
+  .tag.azure { background: #e7f0fd; color: #12539a; }
+  .tag.gcp { background: #e8f3ec; color: #1a6b3c; }
+  .tag.oci { background: #fbe9e9; color: #9c2a2a; }
+  .estate { font-size: 11px; color: #a4302a; font-weight: 600; margin-left: 4px; }
+  a { color: #2a49c4; }
+  a.src { font-size: 12px; color: #6b7280; text-decoration: none; white-space: nowrap; }
+  a.src:hover { text-decoration: underline; }
+  .overflow li { font-size: 14px; color: #4b5563; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e8eaee;
+           font-size: 12px; color: #6b7280; }
+  footer p { margin: 4px 0; }
+  .alert { color: #a4302a; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1013; color: #e6e8ec; }
+    .wrap { background: #16181d; border-color: #262a31; }
+    .lede { background: #171d33; border-left-color: #6f81ea; }
+    h2 { color: #c3c8d1; border-bottom-color: #262a31; }
+    h2.action { color: #f08b83; border-bottom-color: #4a2723; }
+    .tag { background: #24272e; color: #b6bcc7; }
+    .date, .note, a.src, footer, .overflow li { color: #9aa1ad; }
+    a { color: #93a5ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔐 Cloud Security TLDR</h1>
+  <p class="date">Wed 18 Nov 2026</p>
+
+
+  <h2 class="">🔑 Identity &amp; Access</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Amazon API Gateway now offers a native JWT authorizer for REST APIs, a new authorizer type that validates JSON Web Tokens directly in the gateway…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-rest-authorizers-jwt/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon API Gateway now offers a native JWT authorizer for REST APIs, a new authorizer type that validates JSON Web Tokens directly in the gateway…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-rest-jwt-authorizers/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon S3 now records the TLS key exchange algorithm in AWS CloudTrail for S3 requests, so you can see which requests and clients use post-quantum…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-post-quantum-tls-aws-cloudtrail/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Microsoft Entra authentication is now generally available for Azure HorizonDB, providing a more secure, identity-based approach to database authentication. You can use Microsoft Entra authentication…      <a class="src" href="https://azure.microsoft.com/updates?id=575111">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔒 Data Protection</h2>
+  <ul>
+    <li>
+      <span class="tag azure">Azure</span>You can now use AES-256 keys stored in Azure Key Vault Premium or Managed HSM as TDE protectors, providing an alternative to RSA keys for…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=579531">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Building on the public preview introduced in July 2026, this release enables customers and partners to use symmetric encryption capabilities with the oct-HSM key type…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=579374">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Regulated customers running AKS Confidential VM node pools protect workloads in memory today, but the OS disk isn&#39;t encrypted at rest, so they have to…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=581125">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Immutable snapshots for Azure Disk Storage are now available in public preview. Immutable snapshots complement Azure Backup immutable vaults. Use vaults for cost-efficient long-term retention…      <a class="src" href="https://azure.microsoft.com/updates?id=581503">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🌐 Network Security</h2>
+  <ul>
+    <li>
+      <span class="tag azure">Azure</span>You can now connect to Azure HorizonDB clusters privately through Azure Private Link, using a private IP address from your virtual network. Private DNS integration…      <a class="src" href="https://azure.microsoft.com/updates?id=574153">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Announcing the public preview of &#39;service tags as inbound rules&#39; support for third-party customers in network security perimeter. This new capability simplifies how customers manage…      <a class="src" href="https://azure.microsoft.com/updates?id=579201">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>This capability enables secure connectivity between resources protected by different network security perimeters, while maintaining strong perimeter-based access controls. With this release, customers can confidently…      <a class="src" href="https://azure.microsoft.com/updates?id=579206">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon S3 adds post-quantum TLS (PQ-TLS) key exchange support to S3 Vectors and AWS PrivateLink for Amazon S3 interface endpoints. This extends the post-quantum cryptography…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-post-quantum-tls-key-exchange-support/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🛡️ Detection &amp; Response</h2>
+  <ul>
+    <li>
+      <span class="tag azure">Azure</span>The MSSQL extension now supports the Azure SQL Database container, making it easy to create and manage a cloud-aligned local database environment directly in Visual…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=579009">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Today, AWS Security Hub adds installed software and resource usage as signals for resource criticality, which indicates how important a resource is to your business…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-resource-criticality/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>In this article A new cyber stack, built to fight AI with AI Delivering agentic security at Microsoft Ignite Secure your foundations Defend with agents…      <a class="src" href="https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Adaptive Virtual Patching introduces an AI-orchestrated Adaptive Shield designed to reduce exposure to new, emerging, and newly disclosed zero-day vulnerabilities while customers test and…      <a class="src" href="https://azure.microsoft.com/updates?id=580689">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📋 Governance &amp; Compliance</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Your next Bank Negara Malaysia (BNM) notification submission needs auditable evidence of how Amazon Web Services (AWS) controls align with Risk Management in Technology (RMiT)…      <a class="src" href="https://aws.amazon.com/blogs/security/using-the-aws-rmit-workbook-and-iso-compliance-guides-to-support-your-bnm-submissions/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Artifact Validation, in public preview, lets VM image publishers and enterprise platform teams run Azure&#39;s certification-grade quality and security checks on their images in…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=581249">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Bedrock AgentCore Memory now lets you keep short-term memory events for up to 10 years, up from one year. Developers can now use short-term…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-10-year-retention">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Policy support for Azure HorizonDB is now available in preview, helping you apply governance and observability standards consistently across your HorizonDB deployments. With the…      <a class="src" href="https://azure.microsoft.com/updates?id=581180">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📦 Workload &amp; Supply Chain</h2>
+  <ul>
+    <li>
+      <span class="tag azure">Azure</span>Customers standardized on Intel Trust Domain Extensions (TDX) for attestation and hardware confidentiality can&#39;t run those workloads on AKS Confidential VM node pools today, because…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=581130">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+  <h2>➕ Also today — lower impact</h2>
+  <ul class="overflow">
+    <li>
+      <span class="tag azure">Azure</span>User-assigned managed identity (UMI) support is now generally available for Azure HorizonDB, enabling you to assign and centrally manage Azure identities for your HorizonDB clusters…
+      <a class="src" href="https://azure.microsoft.com/updates?id=575069">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Elastic Container Registry (Amazon ECR) now supports global authentication tokens for private registries. Previously, you needed to request a separate authentication token in each…
+      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/global-authentication-amazon-ecr">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Session-based authentication is now in public preview for Azure Blob and Data Lake Storage.Session-based authentication reduces the per-request authentication and authorization time for AI agents…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580306">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure DocumentDB now offers granular role-based access control (RBAC) , well beyond the cluster-level permissions that have been offered in the service. You can now…
+      <a class="src" href="https://azure.microsoft.com/updates?id=578262">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Today, we are announcing that Amazon Elastic VMware Service (Amazon EVS) now supports the r7i.metal-24xl and r7i.metal-48xl Amazon Elastic Compute Cloud (EC2) bare metal instance…
+      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-evs-r7i-agent-skill-support/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Agent Grid is now in public preview, bringing identity-based Zero Trust network security to AI agents on supported Azure environments. Security teams can govern communications…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580684">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Bastion RDP and SSH vision is now in public preview, bringing AI-assisted review to recorded privileged sessions. Security and operations teams can use session…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580699">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Announcing the public preview of centralized user authentication for Azure Application Gateway, along with an updated JWT validation experience. User authentication enables Application Gateway to…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580418">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>In this article From a familiar phishing technique to an AI coding agent How the attack works One approval, four ways the impact can spread…
+      <a class="src" href="https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure SRE Agent now supports the open Agent-to-Agent (A2A) protocol in public preview. SRE agents can hand tasks to other agents and accept tasks from…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580758">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure HorizonDB now supports database auditing with the pgAudit extension. You can capture selected PostgreSQL database activities, including data access, modifications, role changes, and DDL…
+      <a class="src" href="https://azure.microsoft.com/updates?id=579928">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Customer-managed keys (CMK) for encryption at rest are now available in public preview for Azure HorizonDB. By default, Azure HorizonDB uses service\-managed keys (SMK) to…
+      <a class="src" href="https://azure.microsoft.com/updates?id=579540">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Backup for Azure Cosmos DB is now generally available. Vaulted backup protects your Azure Cosmos DB accounts with immutable, long-term backups stored in a…
+      <a class="src" href="https://azure.microsoft.com/updates?id=579147">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Customer-managed keys for Azure Functions Durable Task Scheduler are now generally available for Dedicated SKU schedulers.Organizations that need to manage their own encryption keys can…
+      <a class="src" href="https://azure.microsoft.com/updates?id=578768">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Vaulted backups add an independent protection layer by storing immutable backup copies in an Azure Backup vault, isolated from the source Azure Cosmos DB account…
+      <a class="src" href="https://azure.microsoft.com/updates?id=578044">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>AI Security, a new add-on for Azure Firewall Premium, is now in public preview. Announced at Microsoft Ignite, it introduces five capabilities to help you…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580694">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Application Gateway confidential compute helps organizations protect sensitive data not only in transit, but also while the gateway processes it. By running the Application…
+      <a class="src" href="https://azure.microsoft.com/updates?id=579649">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Sovereign Control Panel is now available in Public Preview. Sovereign Control Panel is an Azure portal experience designed to help organizations assess and continuously monitor…
+      <a class="src" href="https://azure.microsoft.com/updates?id=581220">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Blob Storage turbo tier is now in Public Preview, bringing SSD-backed performance to performance-sensitive data in eligible Azure Blob Storage accounts. Designed for AI…
+      <a class="src" href="https://azure.microsoft.com/updates?id=579031">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Today, we’re announcing simplified onboarding and bot confidence levels for AWS WAF Bot Control at the targeted inspection level, which we refer to as Targeted…
+      <a class="src" href="https://aws.amazon.com/blogs/security/introducing-simplified-onboarding-for-aws-waf-bot-control-at-the-targeted-inspection-level/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure DDoS Protection peacetime telemetry is now in public preview. Customers can now see the traffic reaching their protected public IP addresses during normal operation…
+      <a class="src" href="https://azure.microsoft.com/updates?id=581175">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure DDoS Protection now covers the public IPs behind Azure NAT Gateway StandardV2, in public preview. You can protect the IPv4 and IPv6 addresses that…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580862">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure DDoS Protection custom policy is now generally available, and it’s one of our most requested features. By default, machine-learning auto-tuning sets detection thresholds for…
+      <a class="src" href="https://azure.microsoft.com/updates?id=580852">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Network Watcher VNet Flow Logs now supports flow log enrichment for Azure Private Link Service, providing greater visibility into network traffic flowing through Private…
+      <a class="src" href="https://azure.microsoft.com/updates?id=578792">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Private endpoints for Azure Functions durable task scheduler are now generally available for both Dedicated and Consumption SKU schedulers. Customers can connect Azure Functions and…
+      <a class="src" href="https://azure.microsoft.com/updates?id=578824">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure Managed Redis now supports adding firewall rules for accessing data, and it gives you greater control over network access to your caches. You can…
+      <a class="src" href="https://azure.microsoft.com/updates?id=577589">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure HorizonDB introduces substantial Apache AGE performance improvements for querying and building knowledge graphs. Enhanced query planning and optimized graph joins accelerate eligible read queries…
+      <a class="src" href="https://azure.microsoft.com/updates?id=579660">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS Config now offers managed conformance packs. AWS builds and maintains these packs for specific compliance and governance frameworks. When you deploy one, you choose…
+      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-managed-conformance-packs">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Amazon Bedrock AgentCore Runtime delivers a secure serverless environment to deploy AI agents and tools at scale. When you start talking to your agent, the…
+      <a class="src" href="https://aws.amazon.com/blogs/security/securely-exposing-amazon-bedrock-agentcore-runtime/">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+  <footer>
+    <p>⚠️ sources unavailable today: none</p>
+    <p class="alert">⚙️ classifier ran in degraded mode (keyword) — precision is lower than usual</p>
+    <p>21 items shown, 29 lower-impact · generated 2026-11-18 13:40 UTC</p>
+  </footer>
+</div>
+</body>
+</html>
