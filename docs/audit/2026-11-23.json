@@ -1,0 +1,97 @@
+{
+ "run_at": "2026-11-23T15:42:05+00:00",
+ "classifier": {
+  "path": "keyword",
+  "calls": 0,
+  "unmatched_ids": [],
+  "omitted_ids": [],
+  "errors": [
+   "no LLM provider configured"
+  ]
+ },
+ "counts": {
+  "raw": 1806,
+  "fresh": 2,
+  "already_seen": 1804,
+  "prefiltered": 0,
+  "classified": 2,
+  "security": 1,
+  "shown": 1,
+  "overflow": 0
+ },
+ "per_source": {
+  "aws/security-blog": 20,
+  "azure/ms-security-blog": 10,
+  "gcp/gcp-security-blog": 20,
+  "aws/whats-new": 100,
+  "azure/service-updates": 200,
+  "gcp/release-notes": 1207,
+  "oci/rn-cloud-guard": 22,
+  "oci/rn-identity": 50,
+  "oci/rn-data-safe": 50,
+  "oci/rn-network-firewall": 12,
+  "oci/rn-ztpr": 12,
+  "oci/rn-certificates": 4,
+  "oci/rn-bastion": 6,
+  "oci/rn-compute": 50,
+  "oci/rn-objectstorage": 43
+ },
+ "unavailable": {},
+ "alerts": [],
+ "shown": [
+  {
+   "id": "e4c86df0995e680e",
+   "provider": "gcp",
+   "source": "gcp/release-notes",
+   "source_tier": 2,
+   "service": "NetApp Volumes",
+   "title": "NetApp Volumes: Google Cloud NetApp Volumes is integrated with Unified Maintenance . This integration supports the Flex Unified, Flex File, Standard, Premium, and Extreme…",
+   "url": "https://docs.cloud.google.com/release-notes#November_23_2026",
+   "published_at": "2026-11-23T08:00:00+00:00",
+   "blurb": "Google Cloud NetApp Volumes is integrated with Unified Maintenance . This integration supports the Flex Unified, Flex File, Standard, Premium, and Extreme service levels. You can view upcoming and past planned maintenance events for your storage pools in Cloud Hub, and track event logs and configure automated alerts in Cloud Logging. For more information, see Monitor and plan for maintenance…",
+   "content_hash": "1e1552e38f885b3f",
+   "raw_category": "Feature",
+   "status": "November 23, 2026",
+   "is_security": true,
+   "category": "governance",
+   "tldr": "Google Cloud NetApp Volumes is integrated with Unified Maintenance . This integration supports the Flex Unified, Flex File, Standard, Premium, and Extreme service levels. You…",
+   "impact": "low",
+   "action_required": false,
+   "score": 20.0,
+   "promote_reason": null,
+   "estate_hit": null,
+   "security_service_hit": null,
+   "classified_by": "keyword",
+   "drop_reason": null
+  }
+ ],
+ "overflow": [],
+ "dropped_not_security": [
+  {
+   "id": "502cc0291def5731",
+   "provider": "gcp",
+   "source": "gcp/release-notes",
+   "source_tier": 2,
+   "service": "NetApp Volumes",
+   "title": "NetApp Volumes: Through December 31, 2026, Google Cloud NetApp Volumes sends email notifications to the Google group for NetApp Volumes maintenance, in addition to Unified…",
+   "url": "https://docs.cloud.google.com/release-notes#November_23_2026",
+   "published_at": "2026-11-23T08:00:00+00:00",
+   "blurb": "Through December 31, 2026, Google Cloud NetApp Volumes sends email notifications to the Google group for NetApp Volumes maintenance, in addition to Unified Maintenance alerts. After December 31, 2026, NetApp Volumes no longer sends email notifications to the Google group, and Unified Maintenance is the only source of planned maintenance notifications. For more information, see Monitor and plan…",
+   "content_hash": "842cc5f226143b63",
+   "raw_category": "Announcement",
+   "status": "November 23, 2026",
+   "is_security": false,
+   "category": "governance",
+   "tldr": "Through December 31, 2026, Google Cloud NetApp Volumes sends email notifications to the Google group for NetApp Volumes maintenance, in addition to Unified Maintenance alerts…",
+   "impact": "low",
+   "action_required": false,
+   "score": 20.0,
+   "promote_reason": null,
+   "estate_hit": null,
+   "security_service_hit": null,
+   "classified_by": "keyword",
+   "drop_reason": "classified not security-relevant"
+  }
+ ],
+ "dropped_prefilter": []
+}
