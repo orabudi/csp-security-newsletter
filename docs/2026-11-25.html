@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🔐 Cloud Security TLDR — Wed 25 Nov 2026</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 16px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    background: #f6f7f9; color: #16181d;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 10px;
+          padding: 28px 26px; border: 1px solid #e3e6ea; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: #6b7280; font-size: 13px; margin: 0 0 18px; }
+  .lede { font-size: 15px; background: #f2f5ff; border-left: 3px solid #4557d4;
+          padding: 12px 14px; border-radius: 0 6px 6px 0; margin: 0 0 22px;
+          white-space: pre-line; }
+  .note { font-size: 14px; color: #6b7280; font-style: italic; margin: 0 0 18px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .07em;
+       margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e8eaee;
+       color: #374151; }
+  h2.action { color: #a4302a; border-bottom-color: #f2d3d0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin: 0 0 11px; padding-left: 2px; font-size: 15px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+         padding: 1px 6px; border-radius: 4px; background: #eef0f4; color: #4b5563;
+         margin-right: 7px; vertical-align: 1px; }
+  .tag.aws { background: #fdf0e3; color: #9a5b12; }
+  .tag.azure { background: #e7f0fd; color: #12539a; }
+  .tag.gcp { background: #e8f3ec; color: #1a6b3c; }
+  .tag.oci { background: #fbe9e9; color: #9c2a2a; }
+  .estate { font-size: 11px; color: #a4302a; font-weight: 600; margin-left: 4px; }
+  a { color: #2a49c4; }
+  a.src { font-size: 12px; color: #6b7280; text-decoration: none; white-space: nowrap; }
+  a.src:hover { text-decoration: underline; }
+  .overflow li { font-size: 14px; color: #4b5563; }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e8eaee;
+           font-size: 12px; color: #6b7280; }
+  footer p { margin: 4px 0; }
+  .alert { color: #a4302a; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0e1013; color: #e6e8ec; }
+    .wrap { background: #16181d; border-color: #262a31; }
+    .lede { background: #171d33; border-left-color: #6f81ea; }
+    h2 { color: #c3c8d1; border-bottom-color: #262a31; }
+    h2.action { color: #f08b83; border-bottom-color: #4a2723; }
+    .tag { background: #24272e; color: #b6bcc7; }
+    .date, .note, a.src, footer, .overflow li { color: #9aa1ad; }
+    a { color: #93a5ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔐 Cloud Security TLDR</h1>
+  <p class="date">Wed 25 Nov 2026</p>
+
+
+  <h2 class="">🔑 Identity &amp; Access</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>Suppose you use a restaurant review app to check reviews, book tables, and email invitations to your friends. With OAuth 2.0 , the app sends…      <a class="src" href="https://aws.amazon.com/blogs/security/delegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Azure AI Search and Foundry IQ in Microsoft Foundry can use supported Azure Storage permissions to control access to search results.Once configured, search applications and…<span class="estate">· you run this</span>      <a class="src" href="https://azure.microsoft.com/updates?id=581303">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Eligible customers can now access OpenAI’s specialized cybersecurity models Daybreak Red: GPT-5.6 Cyber through the bedrock-runtime endpoint on Amazon Bedrock in AWS GovCloud (US). Daybreak…      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Within Microsoft Foundry, cost controls set a spending or token budget for a Foundry resource or project. When usage reaches a threshold that you set…      <a class="src" href="https://azure.microsoft.com/updates?id=581323">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🔒 Data Protection</h2>
+  <ul>
+    <li>
+      <span class="tag gcp">GCP</span>For over 20 years, we have protected 4 billion users and 13 million organizations in Workspace, and critical enterprise and government systems on Google Cloud…      <a class="src" href="https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>Spanish version » Amazon Web Services (AWS) is pleased to announce that AWS has achieved Spain’s national Limited Distribution (“Difusión Limitada”) and NATO Restricted accreditation…      <a class="src" href="https://aws.amazon.com/blogs/security/aws-achieves-spains-national-limited-distribution-difusion-limitada-and-nato-restricted-accreditation-in-the-aws-europe-spain-region/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🌐 Network Security</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>AWS Network Firewall now supports context-aware rules , which match traffic by the AWS resources that send and receive it instead of by IP address…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/blogs/security/introducing-context-aware-rules-for-aws-network-firewall/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS Network Firewall now offers automated internet firewall mode (Preview). In this mode, Network Firewall applies your centrally defined rules to traffic at the internet…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/blogs/security/aws-network-firewall-introduces-automated-internet-firewall-mode-preview/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag azure">Azure</span>Administrators can use Azure Policy to govern outbound destinations for hosted agents in Foundry Agent Service. Agent authors configure and attach a compliant egress policy…      <a class="src" href="https://azure.microsoft.com/updates?id=581328">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">🛡️ Detection &amp; Response</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>When it comes to inspecting network traffic, many security teams want two things from a firewall. They want to allow only the traffic each application…      <a class="src" href="https://aws.amazon.com/blogs/security/introducing-aws-network-firewall-next-generation-policy/">source&nbsp;↗</a>
+    </li>
+  </ul>
+  <h2 class="">📋 Governance &amp; Compliance</h2>
+  <ul>
+    <li>
+      <span class="tag aws">AWS</span>In November 2024, Amazon Web Services (AWS) was the first major cloud service provider to announce the ISO/IEC 42001 accredited certification for AI services, covering…      <a class="src" href="https://aws.amazon.com/blogs/security/aws-completed-its-second-iso-iec-420012023-surveillance-audit/">source&nbsp;↗</a>
+    </li>
+    <li>
+      <span class="tag aws">AWS</span>AWS CloudFormation now supports 206 additional resource types across 88 services, including Amazon SageMaker Hub, Amazon Bedrock AgentCore PolicyEngine, and Amazon EC2 Snapshot. This closes…<span class="estate">· you run this</span>      <a class="src" href="https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/">source&nbsp;↗</a>
+    </li>
+  </ul>
+
+
+  <footer>
+    <p>⚠️ sources unavailable today: none</p>
+    <p class="alert">⚙️ classifier ran in degraded mode (keyword) — precision is lower than usual</p>
+    <p>12 items shown · generated 2026-11-25 15:18 UTC</p>
+  </footer>
+</div>
+</body>
+</html>
