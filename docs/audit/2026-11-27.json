@@ -1,0 +1,71 @@
+{
+ "run_at": "2026-11-27T14:43:25+00:00",
+ "classifier": {
+  "path": "keyword",
+  "calls": 0,
+  "unmatched_ids": [],
+  "omitted_ids": [],
+  "errors": [
+   "no LLM provider configured"
+  ]
+ },
+ "counts": {
+  "raw": 1937,
+  "fresh": 1,
+  "already_seen": 1936,
+  "prefiltered": 0,
+  "classified": 1,
+  "security": 1,
+  "shown": 1,
+  "overflow": 0
+ },
+ "per_source": {
+  "aws/security-blog": 20,
+  "azure/ms-security-blog": 10,
+  "gcp/gcp-security-blog": 20,
+  "aws/whats-new": 100,
+  "azure/service-updates": 200,
+  "gcp/release-notes": 1338,
+  "oci/rn-cloud-guard": 22,
+  "oci/rn-identity": 50,
+  "oci/rn-data-safe": 50,
+  "oci/rn-network-firewall": 12,
+  "oci/rn-ztpr": 12,
+  "oci/rn-certificates": 4,
+  "oci/rn-bastion": 6,
+  "oci/rn-compute": 50,
+  "oci/rn-objectstorage": 43
+ },
+ "unavailable": {},
+ "alerts": [],
+ "shown": [
+  {
+   "id": "fddf369052aa116a",
+   "provider": "aws",
+   "source": "aws/whats-new",
+   "source_tier": 2,
+   "service": "Amazon RDS",
+   "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
+   "published_at": "2026-11-26T17:00:00+00:00",
+   "blurb": "Amazon Relational Database Service (RDS) for PostgreSQL now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community. You can upgrade your databases…",
+   "content_hash": "c888037b3c641785",
+   "raw_category": "general:products/amazon-rds,marketing:marchitecture/databases",
+   "status": null,
+   "is_security": true,
+   "category": "detection",
+   "tldr": "Amazon Relational Database Service (RDS) for PostgreSQL now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to…",
+   "impact": "medium",
+   "action_required": false,
+   "score": 50.0,
+   "promote_reason": null,
+   "estate_hit": "RDS",
+   "security_service_hit": null,
+   "classified_by": "keyword",
+   "drop_reason": null
+  }
+ ],
+ "overflow": [],
+ "dropped_not_security": [],
+ "dropped_prefilter": []
+}
